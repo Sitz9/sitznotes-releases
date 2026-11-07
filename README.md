@@ -17,7 +17,9 @@
 
 ## Status
 
-🚧 **In Entwicklung – noch keine Downloads verfügbar.**
+🚧 **In Entwicklung.** Die erste Vorabversion für Windows und macOS findest du unter
+[**Releases**](https://github.com/Sitz9/sitznotes-releases/releases) – sie enthält nur das
+Grundgerüst, noch ohne Funktionen, und ist nicht für den produktiven Einsatz gedacht.
 
 ---
 
