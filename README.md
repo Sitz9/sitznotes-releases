@@ -6,7 +6,7 @@
 
 <p align="center">
   Ideen schnell erfassen, zuordnen, verknüpfen, grafisch darstellen und skizzieren –<br>
-  für Windows, macOS, iPhone/iPad (inkl. Apple Pencil) und Android.
+  für Windows, macOS und iPhone/iPad (inkl. Apple Pencil).
 </p>
 
 <p align="center">
