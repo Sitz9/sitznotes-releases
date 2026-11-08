@@ -79,7 +79,7 @@ mit Versionsnummer und Neuerungen – **„Jetzt installieren"** oder **„Spät
 Selbst suchen: **Einstellungen → Updates → „Nach Updates suchen"**; die automatische Suche (beim Start und alle 6 Stunden)
 lässt sich dort abschalten. Updates sind digital signiert – SitzNotes installiert nur Updates, die wirklich von SitzNotes stammen.
 
-Von Version 0.1.0 oder 0.2.0 aus installierst du 0.3.0 einmal von Hand: **einfach über die alte Version installieren – deine Daten bleiben erhalten**
+Von Version 0.1.0 oder 0.2.0 aus installierst du die aktuelle Version einmal von Hand: **einfach über die alte Version installieren – deine Daten bleiben erhalten**
 und werden automatisch ins neue Format übernommen (Link-, Bild-, Checklisten- und Fix-Karten werden zu normalen Gedanken mit diesem Inhalt).
 Nimm dafür **dasselbe Paket wie bei der ersten Installation** – wer mit dem `.msi` installiert hat, wieder das `.msi`, sonst die `setup.exe`.
 In-App-Updates erkennen das selbst.
@@ -133,11 +133,41 @@ Auf dem Mac jeweils **⌘** statt **Strg**.
 ## Projektarbeiten (Beta) – LaTeX
 
 - **Neue Projektarbeit:** Seitenleiste → **Projektarbeiten** → „Neue Projektarbeit", Vorlage **„Wissenschaftliche Arbeit (deutsch)"** oder **„Leer"** wählen.
-- **LaTeX-Engine:** Ist **MiKTeX**, **TeX Live** oder **MacTeX** installiert, nutzt SitzNotes diese automatisch (inkl. BibTeX und Biber). Sonst kommt das mitgelieferte **Tectonic** zum Einsatz: Beim **ersten** Erzeugen eines PDFs lädt es die benötigten LaTeX-Pakete einmalig aus dem Internet (etwa 40 MB, 1–2 Minuten), danach funktioniert alles **offline**. Die Engine lässt sich je Projektarbeit umstellen.
-- **Literaturverzeichnis:** Die Vorlage nutzt BibTeX (`literatur.bib`, `\cite{…}`) – das funktioniert mit allen Engines. biblatex/Biber geht mit einer installierten Distribution.
+- **LaTeX-Engine:** Ist **MiKTeX**, **TeX Live** oder **MacTeX** installiert, nutzt SitzNotes diese automatisch – **empfohlen** (siehe unten). Ohne Distribution kommt das mitgelieferte **Tectonic** als Notlösung für einfache Dokumente zum Einsatz: Beim ersten PDF lädt es benötigte Pakete einmalig (etwa 40 MB), danach offline. Engine je Projektarbeit unter **Einstellungen** wählbar (automatisch, pdfLaTeX, XeLaTeX, LuaLaTeX, Tectonic).
+- **Literatur, Glossare, Verzeichnisse:** biblatex/Biber (z. B. `style=apa`) und BibTeX, Glossare, Abkürzungs- und Symbolverzeichnisse (auch eigene) erzeugt SitzNotes automatisch und kompiliert so oft, bis alle Verweise stimmen – ohne dass Perl nötig ist.
+- **minted & Co.:** In den Einstellungen der Projektarbeit „**Externe Programme erlauben**" einschalten (Standard aus – nur für eigene, vertrauenswürdige Projekte). Dafür Python 3 installieren.
+- **Fehlerleiste** am unteren Rand der PDF-Vorschau: schließbar, über „⚠ … Fehler · … Warnungen" wieder zu öffnen, Fehler/Warnungen filterbar, Klick springt zur Stelle.
+- **Vorschau abdocken** (⧉) für den zweiten Monitor; Dateiliste und Vorschau per Trennlinie breiter oder schmaler ziehen.
 - **Import:** „Ordner importieren" bzw. „ZIP importieren" übernimmt ein bestehendes LaTeX-Projekt als **Kopie** – deine Originaldateien werden nie verändert.
 - **Sicherung:** Projektarbeiten sind in den automatischen Sicherungen, den Sicherungen vor Updates und im `.sitznotes`-Export enthalten.
 - Es ist eine **Beta**: Bitte bei wichtigen Arbeiten zusätzlich regelmäßig „Projekt als ZIP" exportieren und Fehler als Issue melden.
+
+## Projektarbeiten: LaTeX installieren
+
+Für Projektarbeiten wird eine **vollständige LaTeX-Distribution** empfohlen – **Windows: MiKTeX**, **macOS: MacTeX**.
+Das mitgelieferte Tectonic ist nur eine Notlösung (keine pdfTeX-Befehle wie `\pdfminorversion`, kein Biber, kein minted).
+Die gleiche Anleitung zeigt SitzNotes unter Projektarbeiten → „Anleitung anzeigen".
+
+**Windows (MiKTeX)**
+
+1. Installer von [miktex.org/download](https://miktex.org/download) laden und starten.
+2. „Nur für mich" installieren, „Fehlende Pakete automatisch installieren" = **Ja**.
+3. MiKTeX Console öffnen → **Nach Updates suchen** → installieren → unter Tasks **„Refresh file name database"**.
+4. SitzNotes neu starten.
+
+**macOS (MacTeX)**
+
+1. Paket von [tug.org/mactex](https://www.tug.org/mactex/) laden (mehrere GB) und installieren.
+2. Mit dem **TeX Live Utility** alle Aktualisierungen installieren.
+3. SitzNotes neu starten.
+
+Kleinere Alternative: [BasicTeX](https://www.tug.org/mactex/morepackages.html) – dann müssen benötigte Pakete nachinstalliert werden.
+
+**Optional für minted:** [Python 3](https://www.python.org/downloads/) installieren (Windows: „Add python.exe to PATH" anhaken), Paket `latexminted` über die Distribution installieren und in der Projektarbeit „Externe Programme erlauben" einschalten.
+
+**Prüfen:** Nach dem Kompilieren steht in der Kopfzeile der PDF-Vorschau „Engine: pdfLaTeX (MiKTeX)" bzw. „(TeX Live)" / „(MacTeX)".
+
+**Problemlösung:** Seltsame Fehler nach Updates (z. B. `\insert@pcolumn` bei Tabellen) → MiKTeX Console: Updates + „Refresh file name database"; hartnäckige Fälle in der Eingabeaufforderung `initexmf --update-fndb` und `initexmf --dump`. macOS: TeX Live Utility → Aktualisieren.
 
 ## Datenschutz
 
@@ -149,7 +179,7 @@ Auf dem Mac jeweils **⌘** statt **Strg**.
 ## Bekannte Einschränkungen
 
 - Installer sind noch nicht digital signiert (Hinweise oben bei der Installation); die Updates selbst sind signiert.
-- Projektarbeiten sind eine **Beta**. Mit dem mitgelieferten Tectonic gibt es kein Biber (biblatex) – dafür BibTeX/natbib nutzen oder MiKTeX/TeX Live installieren.
+- Projektarbeiten sind eine **Beta**. Mit dem mitgelieferten Tectonic gibt es kein Biber, keine pdfTeX-Befehle und kein minted – für Abschlussarbeiten MiKTeX bzw. MacTeX installieren (siehe oben).
 - Noch nicht enthalten: iPhone/iPad, Sprachaufnahme, Zeichnen, Mindmap/Canvas, Wireframes, Termine und Erinnerungen – diese kommen in späteren Versionen.
 - Kein automatischer Abgleich zwischen Geräten – Übertragung per Export/Import.
 
