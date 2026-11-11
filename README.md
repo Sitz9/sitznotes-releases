@@ -6,7 +6,7 @@
 
 <p align="center">
   Gedanken in Sekunden festhalten, zuordnen, verknüpfen und wiederfinden –<br>
-  für Windows und macOS (iPhone/iPad folgen).
+  für Windows und macOS – iPad als Beta (noch nicht im App Store).
 </p>
 
 <p align="center">
@@ -124,6 +124,12 @@ Mit `SHA256SUMS.txt` kannst du prüfen, ob der Download unverändert ist.
 2. Die App ist noch nicht von Apple beglaubigt. Beim ersten Start: **Systemeinstellungen → Datenschutz & Sicherheit → „Dennoch öffnen"**.
 3. Für das globale Tastenkürzel kann macOS eine Freigabe unter **Datenschutz & Sicherheit → Bedienungshilfen** verlangen.
 
+### iPad (Beta, noch nicht im App Store)
+
+Die iPad-App (ab 0.6.0) hat dieselbe Oberfläche und dieselben Daten wie am PC/Mac – mit **Apple Pencil** (Druck, Neigung, Doppeltipp, Schweben, Handballen-Schutz), Touch-Bedienung, Split View/Slide Over, Hardware-Tastatur, Mitteilungen für Erinnerungen und Sync über die Dateien-App (OneDrive, iCloud Drive, Dropbox). Projektarbeiten lassen sich auf dem iPad bearbeiten; kompiliert wird am PC/Mac. Diktat über die Diktiertaste der iPad-Tastatur.
+
+Sie ist derzeit eine **Beta zum eigenen Testen** und **noch nicht im App Store** erhältlich (auch nicht über TestFlight). Sobald sie verfügbar ist, steht es hier.
+
 ### Updates
 
 **Ab Version 0.3.0 kommen Updates direkt in SitzNotes:** Gibt es eine neue Version, erscheint oben ein dezenter Hinweis
@@ -185,6 +191,7 @@ Auf dem Mac jeweils **⌘** statt **Strg**.
 ## Tipps zur Nutzung
 
 - **Erst festhalten, später sortieren.** Mit dem Quick-Capture-Kürzel schreibst du den Gedanken in Sekunden auf, ohne das aktuelle Programm zu verlassen. Die erste Zeile wird zum Titel, der Rest zum Inhalt.
+- **Schreiben mit Apple Pencil (iPad):** „Nur Stift zeichnet" ist von Anfang an an – die Hand darf aufliegen, mit dem Finger scrollst und zoomst du. Doppeltipp auf den Pencil wechselt zum Radierer und zurück; hältst du den Stift knapp über das Display, zeigt ein Kreis die Spitze bzw. die Radierergröße.
 - **Inbox-Routine:** Einmal am Tag die Inbox öffnen und mit der Tastatur durchgehen – **S** für den Space, **T** für Tags, **1–9** für den Status, **Enter** übernimmt den Vorschlag. Ziel: Inbox leer.
 - **Alles in einen Gedanken:** Notiz schreiben, mit **/checkliste** Aufgaben dazu, ein Bildschirmfoto mit **Strg+V** direkt an die Stelle, eine Formel mit **/formel** – in der Vorschau hakst du Aufgaben direkt ab.
 - **Spaces für Projekte, Tags für Querschnittsthemen.** Ein Space ist z. B. „Homelab" oder „Musik", ein Tag z. B. `#idee-für-später` oder `#kaufen` – Tags schreibst du einfach mit `#` in den Text.
@@ -271,6 +278,8 @@ Danach gleicht SitzNotes automatisch ab: beim Start, alle paar Minuten, kurz nac
 - **Nicht synchronisiert** werden gerätespezifische Dinge: Tastenkürzel, Fensterpositionen, Sicherungen, ausgeblendete Bereiche, die LaTeX-Engine und „Externe Programme erlauben" einer Projektarbeit.
 - Sync ist **keine Sicherung**: Löschen wird ebenfalls übertragen. Die automatischen Sicherungen laufen weiter.
 - Sync ausschalten oder ein Gerät entfernen geht jederzeit – lokale Daten bleiben erhalten.
+- **iPad (Beta):** In SitzNotes › Einstellungen › Synchronisation › „Ordner wählen" den Sync-Ordner in der Dateien-App antippen (für OneDrive vorher die **OneDrive-App** installieren und anmelden). SitzNotes merkt sich den Ordner dauerhaft. Weil iPadOS keine Ordnerüberwachung im Hintergrund erlaubt, gleicht das iPad beim Öffnen und Zurückkehren in die App, alle paar Minuten, beim Verlassen und beim **Nach-unten-Ziehen** in der Liste ab. Dateien „nur in der Cloud" lädt SitzNotes selbst (mit Anzeige).
+- **Ausgabe-PDFs der Projektarbeiten (ab 0.6.0, Standard aus):** Einstellungen › Synchronisation › „Ausgabe-PDFs der Projektarbeiten mitsynchronisieren" – das zuletzt am PC/Mac erzeugte PDF liegt (verschlüsselt) im Sync-Ordner und lässt sich z. B. auf dem iPad ansehen.
 - **Verschiedene Versionen auf den Geräten (ab 0.5.2):** Ein Gerät mit älterer Version synchronisiert weiter, auch wenn ein anderes schon neuere Funktionen nutzt – neue Inhalte (z. B. Textfelder oder Bilder in Skripten) werden aufbewahrt und weitergegeben, nichts wird überschrieben. Anzeigen kann das ältere Gerät sie erst nach dem Update. In den Sync-Einstellungen siehst du, welches Gerät eine neuere oder ältere Version nutzt. Trotzdem empfohlen: **alle Geräte zeitnah aktualisieren.**
 - Ein Gerät mit **0.5.0** meldet bei Daten neuerer Versionen weiterhin **„Bitte SitzNotes aktualisieren"** und gleicht bis zum Update nichts ab – es überschreibt nichts, und seine Änderungen werden nach dem Update übertragen.
 
@@ -282,6 +291,7 @@ Danach gleicht SitzNotes automatisch ab: beim Start, alle paar Minuten, kurz nac
 - **Sprachaufnahmen** bleiben auf deinem Gerät (und in deinem Sync-Ordner). Die Umwandlung in Text läuft **lokal** (whisper.cpp). Das Sprachmodell wird **nur nach deiner Zustimmung** einmalig von huggingface.co geladen; dabei werden keine Daten von dir übertragen. Das Modell wird nicht synchronisiert und lässt sich jederzeit entfernen.
 - Ins Internet geht SitzNotes nur für die **Update-Suche** (eine kleine Abfrage bei GitHub, abschaltbar) und – nur wenn du Projektarbeiten mit dem mitgelieferten Tectonic nutzt – zum einmaligen Laden von LaTeX-Paketen. Dabei werden keine Daten von dir übertragen.
 - **Sync** läuft nur über den Ordner, den du selbst wählst; SitzNotes betreibt keinen Server. Mit Ende-zu-Ende-Verschlüsselung (AES-256) sieht der Cloud-Anbieter nur verschlüsselte Dateien; der Schlüssel liegt im Schlüsselbund bzw. in der Windows-Anmeldeinformationsverwaltung deiner Geräte.
+- **iPad:** Daten im geschützten Speicher der App; automatische Sicherungen in der Dateien-App unter „Auf meinem iPad › SitzNotes › Sicherungen". Erinnerungen werden als lokale Mitteilungen auf dem iPad eingeplant – ohne Push-Server.
 - **Einsatzplanung:** Mitarbeiterdaten sind personenbezogene Daten. Die Nutzung im Unternehmen ist ggf. mit Datenschutzbeauftragten bzw. Betriebsrat abzustimmen. Beim Sync über Cloud-Dienste bitte die Ende-zu-Ende-Verschlüsselung verwenden.
 - Links öffnen immer in deinem Standard-Browser, nie in der App.
 
@@ -299,7 +309,8 @@ Danach gleicht SitzNotes automatisch ab: beim Start, alle paar Minuten, kurz nac
 - Textfelder nutzen drei Schriftarten (ohne Serifen, mit Serifen, Schreibmaschine). Zeichen, die diese PDF-Standardschriften nicht kennen (z. B. Emojis), erscheinen im PDF-Export als „?".
 - „Einfügen" im Rechtsklick-Menü nimmt Bilder aus anderen Apps nicht überall an – dafür **Strg+V** verwenden.
 - Ein Gerät mit 0.5.1 zeigt Textfelder, Formeln und eingefügte Bilder in Skripten erst nach dem Update auf 0.5.2 an (sie gehen dabei nicht verloren).
-- Noch nicht enthalten: iPhone/iPad (mit Apple Pencil folgt mit der iPad-App), Mindmap/Canvas, Wireframes – diese kommen in späteren Versionen.
+- iPad-App: **Beta, noch nicht im App Store**; kein Kompilieren von LaTeX und kein lokales Diktat auf dem iPad (Diktiertaste von iPadOS nutzen); Abgleich nur, solange die App offen ist bzw. beim Öffnen/Verlassen.
+- Noch nicht enthalten: iPhone-optimierte Bedienung, Widget und „Teilen an SitzNotes" auf dem iPad, Mindmap/Canvas, Wireframes – diese kommen in späteren Versionen.
 
 ## Patchnotes
 
