@@ -10,7 +10,8 @@
 </p>
 
 <p align="center">
-  Deine Daten bleiben lokal auf deinem Gerät. Kein Konto, kein Server.
+  Deine Daten bleiben lokal auf deinem Gerät. Kein Konto, kein Server –<br>
+  PC und Mac gleichen sich auf Wunsch über deinen eigenen Cloud- oder NAS-Ordner ab.
 </p>
 
 <p align="center">
@@ -35,12 +36,19 @@
 - **Formeln in LaTeX-Schreibweise:** `$E = mc^2$` im Text oder als eigener Block mit `$$ … $$`.
 - **Zuordnen:** Spaces (Projekte/Themen mit Farbe und Icon), Tags (`#tag` im Text wird automatisch erkannt), Status von „Inbox" bis „Erledigt". SitzNotes schlägt passende Spaces vor („gehört wahrscheinlich zu …"). Eine Karte kann in mehreren Spaces liegen.
 - **Verknüpfungen** zwischen Karten: gehört zu, inspiriert von, blockiert, Alternative zu, Teil von.
+- **Synchronisation über deinen eigenen Ordner** (OneDrive, iCloud Drive, Dropbox, Google Drive oder NAS): PC und Mac bleiben automatisch auf demselben Stand – ohne Konto und ohne SitzNotes-Server, optional **Ende-zu-Ende-verschlüsselt**. Gleichzeitig auf zwei Geräten geändert? Dann gibt es eine **Konfliktkopie** statt Datenverlust.
+- **Kalender & Erinnerungen:** Fälligkeit, Erinnerungen und Wiedervorlage an jeder Karte, Kalender (Monat/Woche/Agenda) mit Drag & Drop, **„Heute & überfällig"** in der Seitenleiste, Erinnerungen mit „Öffnen", „Erledigt" und „Später" – auch wenn das Fenster geschlossen ist. Export als **.ics** für Outlook, Apple oder Google Kalender.
+- **Quick Capture versteht Zeitangaben** wie „morgen 9 Uhr", „Freitag" oder „in 2 Wochen" und setzt die Fälligkeit.
 - **Fixes 🐞:** eigene Spalte im Board direkt nach der Inbox; Schalter **„Nur Fixes"** zeigt nur Fehler und Korrekturen.
-- **Liste und Board** (Kanban nach Status mit Drag & Drop), **Spalten auf- und zuklappbar**, Schalter **„Erledigte ausblenden"**.
+- **Liste und Board** (Kanban nach Status mit Drag & Drop), **Spalten auf- und zuklappbar, ausblendbar und umsortierbar**, **eigene Spalten** mit Name, Farbe und Symbol (Rechtsklick auf den Spaltenkopf), Schalter **„Erledigte ausblenden"**.
+- **Spaces archivieren:** Abgeschlossenes verschwindet aus dem Alltag, bleibt im **Archiv** lesbar und lässt sich jederzeit wiederherstellen.
+- **Einsatzplanung (Beta)** für Teams: Mitarbeiter mit Rolle, Qualifikationen und Abwesenheiten; Aufgaben per Drag & Drop einplanen (Tag oder Woche, Schichten), **Warnungen** bei Überlastung, Abwesenheit oder fehlender Qualifikation; Zuweisungs- und Aufgabenliste als **PDF/Druck (A4 quer)** oder **CSV**; **Besprechungsmodus** im Vollbild für den Monitor in der Morgenrunde. Umschalter **„Notizen/Projekte ↔ Einsatzplanung"** oben in der Seitenleiste.
 - **Projektarbeiten (Beta):** wissenschaftliche Arbeiten, Bachelorarbeiten und andere Dokumente in **LaTeX** schreiben – mit **PDF-Vorschau** daneben, die sich nach dem Tippen selbst erneuert, verständlicher **Fehleranzeige** (Klick springt zur Zeile), Vorlage **„Wissenschaftliche Arbeit (deutsch)"** (Titelseite, Verzeichnisse, Literatur, deutsche Silbentrennung), deinen Notizen zum Einfügen und Export als PDF oder ZIP. Bestehende LaTeX-Projekte lassen sich als Kopie importieren.
 - **Volltextsuche** (auch Wortanfänge, Umlaute egal), Filter nach Status/Space/Tag, **Schnellsuche mit Strg+K**.
 - **Bilder** per Drag & Drop oder Einfügen (z. B. Bildschirmausschnitt).
 - **Export & Import:** alles oder einzelne Spaces als `.sitznotes`-Datei (Import führt zusammen, nichts wird doppelt) und als **Markdown + Bilder** – ein Ordner je Space, lesbar in jedem Editor oder z. B. in Obsidian.
+- **Space als Gesamtdokument:** eine Datei mit allen Karten eines Space (oder aller Spaces), gegliedert nach den Board-Spalten, mit Inhaltsverzeichnis – als **PDF** oder **Markdown**.
+- **Bereiche ausblenden:** Was du nicht brauchst (Projektarbeiten, Kalender, Archiv, Einsatzplanung), blendest du in den Einstellungen aus.
 - **Automatische Sicherung** täglich (die letzten 10 Stände) und **vor jedem Update**.
 - **Updates direkt in SitzNotes:** Hinweis mit den Neuerungen, „Jetzt installieren" oder „Später" – nie ungefragt.
 - **Papierkorb** mit „Endgültig löschen" und „Papierkorb leeren" (mit Sicherheitsabfrage), auf Wunsch automatisch nach einer gewählten Zahl von Tagen.
@@ -49,6 +57,14 @@
 
 <p align="center">
   <img src="assets/screenshots/sitznotes-board.png" alt="SitzNotes: Board nach Status mit Fixes-Spalte" width="900">
+</p>
+
+<p align="center">
+  <img src="assets/screenshots/sitznotes-kalender.png" alt="SitzNotes: Kalender mit Fälligkeiten und Aufgaben" width="900">
+</p>
+
+<p align="center">
+  <img src="assets/screenshots/sitznotes-einsatzplanung.png" alt="SitzNotes: Einsatzplanung (Beta) mit Mitarbeitern, Aufgaben und Warnungen" width="900">
 </p>
 
 <p align="center">
@@ -110,6 +126,8 @@ und die Sicherungen darin gelöscht.
 | **Strg+Enter** oder **Esc** | beim Bearbeiten: **Fertig** |
 | **/** | beim Bearbeiten: Baustein einfügen (Checkliste, Formel, Bild …) |
 | **Strg+S** | in einer Projektarbeit: speichern und PDF sofort erzeugen |
+| **Rechtsklick** auf einen Spaltenkopf | Board: Spalte ausblenden, verschieben, Spalten anpassen |
+| **← / →** | im Besprechungsmodus: Tag bzw. Woche blättern (**Esc** beendet) |
 | **Esc** | Karte schließen |
 
 Auf dem Mac jeweils **⌘** statt **Strg**.
@@ -126,7 +144,12 @@ Auf dem Mac jeweils **⌘** statt **Strg**.
 - **Verknüpfen statt kopieren:** Gehört eine Idee zu einer anderen, verknüpfe sie – in beiden Karten ist die Verbindung sichtbar.
 - **Diktieren statt tippen:** Systemeigenes Diktieren funktioniert in jedem Textfeld von SitzNotes – **Windows: Win+H**, **macOS: Diktierfunktion** (z. B. zweimal **Fn** bzw. die **Globus-Taste**).
 - **Sicherungsordner außerhalb des App-Datenordners wählen** (Einstellungen → Sicherungsordner), z. B. **Dokumente**, ein **NAS** oder ein Cloud-Ordner. Dann überstehen deine Sicherungen auch eine Deinstallation oder einen Rechnerwechsel.
-- **Zwischen Geräten übertragen:** auf dem einen Gerät „Alles exportieren (.sitznotes)", auf dem anderen importieren – SitzNotes führt zusammen und behält jeweils die neueste Änderung.
+- **PC und Mac synchron halten:** Einmal einen gemeinsamen Ordner einrichten (siehe „Synchronisation" unten) – danach musst du nichts mehr tun. Ohne Sync geht es weiterhin per Export/Import: auf dem einen Gerät „Alles exportieren (.sitznotes)", auf dem anderen importieren.
+- **Termine direkt beim Festhalten:** Schreib im Quick Capture z. B. „Mail an Betreuer morgen 9 Uhr" – SitzNotes erkennt die Zeit, zeigt sie vor dem Speichern an und erinnert dich pünktlich. Mit ✕ in der Vorschau übernimmst du die Zeitangabe nicht.
+- **Wiedervorlage statt Vergessen:** Ideen, die gerade nicht dran sind, mit „Wiedervorlage in 14 Tagen" versehen – sie tauchen dann unter „Heute & überfällig" wieder auf.
+- **Board nach deinem Ablauf:** Spalten, die du nie brauchst (z. B. „Verworfen"), ausblenden; eigene Spalten wie „Warten auf Rückmeldung" anlegen. Karten in ausgeblendeten Spalten gehen nie verloren.
+- **Fertige Projekte archivieren** statt löschen – das Archiv bleibt durchsuchbar („Archiv einbeziehen" neben der Suche).
+- **Morgenrunde im Team:** In der Einsatzplanung den **Besprechungsmodus** auf den großen Monitor bringen; Zuweisungsliste vorher als PDF für den Aushang speichern.
 - **Markdown-Export** (Einstellungen oder Space-Menü „⋯") für eine lesbare Kopie: ein Ordner je Space, Bilder im Unterordner `bilder`, Fixes im Unterordner `Fixes`.
 - **Papierkorb aufräumen:** Gelöschte Karten liegen im Papierkorb, bis du sie endgültig löschst („Papierkorb leeren"). Wer möchte, stellt in den Einstellungen „Automatisch leeren nach … Tagen" ein – standardmäßig ist das aus.
 
@@ -169,19 +192,42 @@ Kleinere Alternative: [BasicTeX](https://www.tug.org/mactex/morepackages.html) �
 
 **Problemlösung:** Seltsame Fehler nach Updates (z. B. `\insert@pcolumn` bei Tabellen) → MiKTeX Console: Updates + „Refresh file name database"; hartnäckige Fälle in der Eingabeaufforderung `initexmf --update-fndb` und `initexmf --dump`. macOS: TeX Live Utility → Aktualisieren.
 
+## Synchronisation (OneDrive, iCloud Drive, NAS)
+
+SitzNotes gleicht mehrere Geräte über einen **Ordner** ab, den du schon hast. Es gibt kein Konto und keinen SitzNotes-Server – den Transport übernimmt dein Cloud-Dienst bzw. dein Netzwerk. Jedes Gerät behält alle Daten lokal und funktioniert auch offline.
+
+1. Einen **eigenen, leeren Unterordner** anlegen, z. B. `OneDrive\SitzNotes-Sync` oder `iCloud Drive/SitzNotes-Sync` oder eine Freigabe auf dem NAS.
+   **OneDrive:** Rechtsklick auf den Ordner → **„Immer auf diesem Gerät beibehalten"**. **iCloud Drive:** im Finder „Immer behalten" bzw. „Laden".
+2. **Einstellungen → Synchronisation → „Sync einrichten …"** → Ordner wählen → Gerätenamen prüfen.
+3. **Ende-zu-Ende-Verschlüsselung** (empfohlen): Sync-Passwort vergeben und gut aufbewahren – es wird für jedes weitere Gerät gebraucht. Dein Cloud-Anbieter sieht dann nur verschlüsselte Dateien.
+4. Auf dem nächsten Gerät **denselben Ordner** wählen (der Pfad darf anders sein) und das Sync-Passwort eingeben. Beim ersten Abgleich zeigt SitzNotes eine Vorschau, legt eine Sicherung an und führt **beide Bestände verlustfrei zusammen**.
+
+Danach gleicht SitzNotes automatisch ab: beim Start, alle paar Minuten, kurz nach deinen Änderungen, wenn der Cloud-Dienst Neues bringt, und beim Beenden. Das Symbol unten in der Seitenleiste zeigt den Stand (✓ aktuell, ↻ synchronisiert, ⚠ Problem – mit Erklärung).
+
+- **Gleichzeitig bearbeitet?** Die neuere Fassung bleibt an der Karte, die andere erscheint als „… (Konfliktkopie – Gerätename)" daneben.
+- **Ordner nicht erreichbar** (NAS aus, unterwegs)? Weiterarbeiten – SitzNotes holt alles nach, sobald der Ordner wieder da ist.
+- **Nicht synchronisiert** werden gerätespezifische Dinge: Tastenkürzel, Fensterpositionen, Sicherungen, ausgeblendete Bereiche, die LaTeX-Engine und „Externe Programme erlauben" einer Projektarbeit.
+- Sync ist **keine Sicherung**: Löschen wird ebenfalls übertragen. Die automatischen Sicherungen laufen weiter.
+- Sync ausschalten oder ein Gerät entfernen geht jederzeit – lokale Daten bleiben erhalten.
+
 ## Datenschutz
 
 - Alle Karten, Bilder, Projektarbeiten und Einstellungen liegen **nur lokal** auf deinem Gerät (Windows: `%APPDATA%\de.sitzmedia.sitznotes`, macOS: `~/Library/Application Support/de.sitzmedia.sitznotes`).
 - **Kein Konto, kein Server, keine Telemetrie.** SitzNotes funktioniert vollständig ohne Internet.
 - Ins Internet geht SitzNotes nur für die **Update-Suche** (eine kleine Abfrage bei GitHub, abschaltbar) und – nur wenn du Projektarbeiten mit dem mitgelieferten Tectonic nutzt – zum einmaligen Laden von LaTeX-Paketen. Dabei werden keine Daten von dir übertragen.
+- **Sync** läuft nur über den Ordner, den du selbst wählst; SitzNotes betreibt keinen Server. Mit Ende-zu-Ende-Verschlüsselung (AES-256) sieht der Cloud-Anbieter nur verschlüsselte Dateien; der Schlüssel liegt im Schlüsselbund bzw. in der Windows-Anmeldeinformationsverwaltung deiner Geräte.
+- **Einsatzplanung:** Mitarbeiterdaten sind personenbezogene Daten. Die Nutzung im Unternehmen ist ggf. mit Datenschutzbeauftragten bzw. Betriebsrat abzustimmen. Beim Sync über Cloud-Dienste bitte die Ende-zu-Ende-Verschlüsselung verwenden.
 - Links öffnen immer in deinem Standard-Browser, nie in der App.
 
 ## Bekannte Einschränkungen
 
 - Installer sind noch nicht digital signiert (Hinweise oben bei der Installation); die Updates selbst sind signiert.
 - Projektarbeiten sind eine **Beta**. Mit dem mitgelieferten Tectonic gibt es kein Biber, keine pdfTeX-Befehle und kein minted – für Abschlussarbeiten MiKTeX bzw. MacTeX installieren (siehe oben).
-- Noch nicht enthalten: iPhone/iPad, Sprachaufnahme, Zeichnen, Mindmap/Canvas, Wireframes, Termine und Erinnerungen – diese kommen in späteren Versionen.
-- Kein automatischer Abgleich zwischen Geräten – Übertragung per Export/Import.
+- Einsatzplanung ist eine **Beta**: ein Planer je Datenbestand, keine Rechteverwaltung für mehrere Personen.
+- Erinnerungen erscheinen in einem kleinen SitzNotes-Hinweisfenster (plus Systembenachrichtigung) – SitzNotes muss dafür laufen (im Tray genügt).
+- „Als PDF speichern" direkt aus der Druckansicht gibt es unter Windows; auf dem Mac im Druckdialog **„PDF → Als PDF sichern"** wählen.
+- Sync über einen Ordner ist so schnell wie dein Cloud-Dienst (meist Sekunden bis wenige Minuten).
+- Noch nicht enthalten: iPhone/iPad, Sprachaufnahme, Zeichnen, Mindmap/Canvas, Wireframes – diese kommen in späteren Versionen.
 
 ## Patchnotes
 
