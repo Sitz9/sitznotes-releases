@@ -40,12 +40,16 @@
 - **Kalender & Erinnerungen:** Fälligkeit, Erinnerungen und Wiedervorlage an jeder Karte, Kalender (Monat/Woche/Agenda) mit Drag & Drop, **„Heute & überfällig"** in der Seitenleiste, Erinnerungen mit „Öffnen", „Erledigt" und „Später" – auch wenn das Fenster geschlossen ist. Export als **.ics** für Outlook, Apple oder Google Kalender.
 - **Quick Capture versteht Zeitangaben** wie „morgen 9 Uhr", „Freitag" oder „in 2 Wochen" und setzt die Fälligkeit.
 - **Skripte & Handschrift (Beta):** Vorlesungsskripte und Übungsblätter als **PDF importieren** oder **Notizbücher** mit leeren, linierten, karierten oder Punkt-Seiten anlegen – und mit **druckempfindlichem Stift**, **Textmarker**, **Radierer** (ganzer Strich oder nur ein Bereich), **Lineal/geraden Linien**, **Formen** und **Lasso** bearbeiten. **Seiten an jeder Stelle einfügen**, duplizieren, löschen und umsortieren – der Platz beim Rechnen geht nie aus. Zoom, Seitenübersicht, **Suche im PDF-Text**, **Export als PDF mit Handschrift** (das Original bleibt unverändert), Seite oder Ausschnitt als Bild in eine Notiz. Funktioniert mit Maus, Touch und Grafiktablett.
+  - **Ordner/Kurse:** z. B. „Mathe 1" mit Unterordnern, Farbe und Symbol, optional einem Space zugeordnet – Skripte und Notizbücher per Drag & Drop einsortieren.
+  - **Kopieren, Ausschneiden, Einfügen, Duplizieren:** mit dem Lasso auswählen, dann über die Leiste an der Auswahl, per Rechtsklick (bzw. langes Drücken) oder mit **Strg+C / Strg+X / Strg+V / Strg+D** – auch auf andere Seiten und in andere Notizbücher.
+  - **Formerkennung durch Halten:** Strich zeichnen und am Ende kurz stillhalten – daraus wird eine saubere **Gerade** (rastet waagerecht/senkrecht ein, ideal für Bruchstriche), ein **Kreis**, eine **Ellipse**, ein **Rechteck/Quadrat**, ein **Dreieck** oder ein **Pfeil**. **Strg+Z** holt den Strich zurück.
 - **Skizze in jeder Notiz:** Baustein „Skizze" in der Einfügen-Leiste (oder `/skizze`) – kurz zeichnen, als Bild einfügen.
+- **Direkt diktieren:** In jedem Textfeld (Notiz, Quick Capture, Einsatzplanung, LaTeX-Editor) auf 🎙️ klicken oder **Strg+Umschalt+D** drücken – sprechen – und der Text steht an der Cursor-Stelle, mit Satzzeichen und Großschreibung. Kürzel **gedrückt halten** = sprechen, loslassen = einfügen; **Esc** bricht ab. Optional **Dauer-Diktat**. Läuft **lokal** auf deinem Gerät, ohne Cloud; beim Diktat wird kein Audio gespeichert.
 - **Sprachnotizen:** Aufnahme direkt in einer Karte (Einfügen-Leiste „Sprache" oder `/sprache`) und im Quick Capture (🎙️), mit Player. Auf Wunsch **lokal in Text umgewandelt** – auf deinem Gerät, ohne Cloud.
 - **Fixes 🐞:** eigene Spalte im Board direkt nach der Inbox; Schalter **„Nur Fixes"** zeigt nur Fehler und Korrekturen.
 - **Liste und Board** (Kanban nach Status mit Drag & Drop), **Spalten auf- und zuklappbar, ausblendbar und umsortierbar**, **eigene Spalten** mit Name, Farbe und Symbol (Rechtsklick auf den Spaltenkopf), Schalter **„Erledigte ausblenden"**.
 - **Spaces archivieren:** Abgeschlossenes verschwindet aus dem Alltag, bleibt im **Archiv** lesbar und lässt sich jederzeit wiederherstellen.
-- **Einsatzplanung (Beta)** für Teams: Mitarbeiter mit Rolle, Qualifikationen und Abwesenheiten; Aufgaben per Drag & Drop einplanen (Tag oder Woche, Schichten), **Warnungen** bei Überlastung, Abwesenheit oder fehlender Qualifikation; Zuweisungs- und Aufgabenliste als **PDF/Druck (A4 quer)** oder **CSV**; **Besprechungsmodus** im Vollbild für den Monitor in der Morgenrunde. Umschalter **„Notizen/Projekte ↔ Einsatzplanung"** oben in der Seitenleiste.
+- **Einsatzplanung (Beta)** für Teams: Mitarbeiter mit Rolle, Qualifikationen und Abwesenheiten – **nach Rolle gruppiert** und alphabetisch, Reihenfolge der Rollen einstellbar; viele gleichartige Mitarbeiter **schnell anlegen** („Speichern & nächster" übernimmt Rolle und Qualifikationen); Aufgaben per Drag & Drop einplanen (Tag oder Woche, Schichten), auch **mit mehreren Mitarbeitern** (mit Strg ziehen = weiteren hinzufügen), **Warnungen** bei Überlastung, Abwesenheit oder fehlender Qualifikation; Zuweisungs- und Aufgabenliste als **PDF/Druck (A4 quer)** oder **CSV**; **Besprechungsmodus** im Vollbild für den Monitor in der Morgenrunde. Umschalter **„Notizen/Projekte ↔ Einsatzplanung"** oben in der Seitenleiste.
 - **Projektarbeiten (Beta):** wissenschaftliche Arbeiten, Bachelorarbeiten und andere Dokumente in **LaTeX** schreiben – mit **PDF-Vorschau** daneben, die sich nach dem Tippen selbst erneuert, verständlicher **Fehleranzeige** (Klick springt zur Zeile), Vorlage **„Wissenschaftliche Arbeit (deutsch)"** (Titelseite, Verzeichnisse, Literatur, deutsche Silbentrennung), deinen Notizen zum Einfügen und Export als PDF oder ZIP. Bestehende LaTeX-Projekte lassen sich als Kopie importieren.
 - **Volltextsuche** (auch Wortanfänge, Umlaute egal), Filter nach Status/Space/Tag, **Schnellsuche mit Strg+K**.
 - **Bilder** per Drag & Drop oder Einfügen (z. B. Bildschirmausschnitt).
@@ -67,11 +71,19 @@
 </p>
 
 <p align="center">
+  <img src="assets/screenshots/sitznotes-ordner.png" alt="SitzNotes: Ordner für Vorlesungen in „Skripte & Handschrift“" width="900">
+</p>
+
+<p align="center">
+  <img src="assets/screenshots/sitznotes-diktat.png" alt="SitzNotes: Direkt diktieren – „Höre zu …“ in einer Notiz" width="900">
+</p>
+
+<p align="center">
   <img src="assets/screenshots/sitznotes-kalender.png" alt="SitzNotes: Kalender mit Fälligkeiten und Aufgaben" width="900">
 </p>
 
 <p align="center">
-  <img src="assets/screenshots/sitznotes-einsatzplanung.png" alt="SitzNotes: Einsatzplanung (Beta) mit Mitarbeitern, Aufgaben und Warnungen" width="900">
+  <img src="assets/screenshots/sitznotes-einsatzplanung.png" alt="SitzNotes: Einsatzplanung – Mitarbeiter nach Rollen, Aufgaben mit mehreren Mitarbeitern" width="900">
 </p>
 
 <p align="center">
@@ -136,7 +148,11 @@ und die Sicherungen darin gelöscht.
 | **Rechtsklick** auf einen Spaltenkopf | Board: Spalte ausblenden, verschieben, Spalten anpassen |
 | **Strg+Z** / **Strg+Y** | in Skripten & Notizbüchern: rückgängig / wiederholen |
 | **Umschalt** beim Ziehen | gerade Linie bzw. Pfeil in 15°-Schritten |
-| **Entf** | Lasso-Auswahl löschen |
+| **Strg+C** / **Strg+X** / **Strg+V** / **Strg+D** / **Entf** | Lasso-Auswahl kopieren / ausschneiden / einfügen / duplizieren / löschen |
+| **Rechtsklick** bzw. **langes Drücken** auf eine Seite | Menü: Kopieren, Ausschneiden, Duplizieren, Löschen, Einfügen |
+| Am Strichende **kurz stillhalten** | Formerkennung (Gerade, Kreis, Rechteck, Dreieck, Pfeil …) |
+| **Strg+Umschalt+D** (halten oder drücken) | in jedem Textfeld diktieren (in den Einstellungen änderbar), **Esc** bricht ab |
+| **Strg** beim Ziehen einer Aufgabe | Einsatzplanung: weiteren Mitarbeiter hinzufügen |
 | **← / →** | im Besprechungsmodus: Tag bzw. Woche blättern (**Esc** beendet) |
 | **Esc** | Karte schließen |
 
@@ -152,8 +168,10 @@ Auf dem Mac jeweils **⌘** statt **Strg**.
 - **Board für den Überblick:** Karten per Drag & Drop in die nächste Spalte ziehen; Spalten, die du gerade nicht brauchst, per Klick auf den Spaltenkopf zuklappen; „Erledigte ausblenden" hält das Board übersichtlich.
 - **Projektarbeit neben den Notizen:** Ordne die Projektarbeit dem Space mit deinen Recherche-Notizen zu – unter „Notizen" stehen sie neben dem Editor und lassen sich per Klick als LaTeX einfügen. Bilder einfach in die Dateiliste oder den Editor ziehen.
 - **Verknüpfen statt kopieren:** Gehört eine Idee zu einer anderen, verknüpfe sie – in beiden Karten ist die Verbindung sichtbar.
-- **Diktieren statt tippen:** Systemeigenes Diktieren funktioniert in jedem Textfeld von SitzNotes – **Windows: Win+H**, **macOS: Diktierfunktion** (z. B. zweimal **Fn** bzw. die **Globus-Taste**). Für längere Gedanken unterwegs: **🎙️ im Quick Capture** – die Aufnahme landet in der Inbox, mit Sprachmodell gleich als Text.
-- **Sprache in Text – lokal:** Einstellungen → **„Sprache & Diktat"** → Modell laden („Genauer", ca. 180 MB, empfohlen – oder „Schnell", ca. 57 MB). Die Größe siehst du vor dem Download; danach läuft alles offline. Mit „automatisch umwandeln" steht der Text direkt unter jeder Aufnahme.
+- **Diktieren statt tippen:** In jedes Textfeld klicken und **Strg+Umschalt+D gedrückt halten**, sprechen, loslassen – fertig. Für Umbrüche „neue Zeile" bzw. „neuer Absatz" sagen. Für längere Texte in den Einstellungen das **Dauer-Diktat** einschalten. Alternativ funktioniert auch das Diktieren des Systems (**Windows: Win+H**, **macOS:** zweimal **Fn** bzw. **Globus-Taste**). Für längere Gedanken unterwegs: **🎙️ im Quick Capture** – die Aufnahme landet in der Inbox, mit Sprachmodell gleich als Text.
+- **Sprache in Text – lokal:** Einstellungen → **„Sprache & Diktat"** → Modell laden („Genauer", ca. 180 MB, empfohlen – oder „Schnell", ca. 57 MB). Die Größe siehst du vor dem Download; danach läuft alles offline. Mit „automatisch umwandeln" steht der Text direkt unter jeder Aufnahme. Ist dir das Diktat zu langsam, wähle dort „Schnell".
+- **Ein Ordner je Vorlesung:** In „Skripte & Handschrift" einen Ordner pro Kurs anlegen und ihm den Space des Kurses geben – neue Skripte darin landen automatisch im richtigen Space.
+- **Saubere Skizzen ohne Lineal:** Bruchstrich, Achsen oder Kästen einfach zeichnen und am Ende kurz stillhalten. Rechenweg auf eine neue Seite übernehmen: mit dem Lasso auswählen, **Strg+C**, auf der neuen Seite **Strg+V**.
 - **Skript in der Vorlesung:** PDF importieren, mit dem **Textmarker** markieren, mit dem **Stift** mitschreiben; wird es eng, unter der Seite „+ Kariert" einfügen und dort weiterrechnen. Am Ende **„Als PDF exportieren"** für eine Kopie mit allen Notizen.
 - **Mit Grafiktablett oder Touchscreen:** Sobald ein Stift erkannt wird, schaltet sich **„Nur Stift zeichnet"** ein – Finger blättern dann nur (Handballen-Schutz).
 - **Sicherungsordner außerhalb des App-Datenordners wählen** (Einstellungen → Sicherungsordner), z. B. **Dokumente**, ein **NAS** oder ein Cloud-Ordner. Dann überstehen deine Sicherungen auch eine Deinstallation oder einen Rechnerwechsel.
@@ -163,6 +181,7 @@ Auf dem Mac jeweils **⌘** statt **Strg**.
 - **Board nach deinem Ablauf:** Spalten, die du nie brauchst (z. B. „Verworfen"), ausblenden; eigene Spalten wie „Warten auf Rückmeldung" anlegen. Karten in ausgeblendeten Spalten gehen nie verloren.
 - **Fertige Projekte archivieren** statt löschen – das Archiv bleibt durchsuchbar („Archiv einbeziehen" neben der Suche).
 - **Morgenrunde im Team:** In der Einsatzplanung den **Besprechungsmodus** auf den großen Monitor bringen; Zuweisungsliste vorher als PDF für den Aushang speichern.
+- **Team schnell erfassen:** Erst alle Mitarbeiter einer Rolle hintereinander anlegen (Rolle und Qualifikationen einmal eintragen, dann nur noch Name + Enter), dann die nächste Rolle. Mit ↑/↓ legst du fest, welche Rolle oben steht.
 - **Markdown-Export** (Einstellungen oder Space-Menü „⋯") für eine lesbare Kopie: ein Ordner je Space, Bilder im Unterordner `bilder`, Fixes im Unterordner `Fixes`.
 - **Papierkorb aufräumen:** Gelöschte Karten liegen im Papierkorb, bis du sie endgültig löschst („Papierkorb leeren"). Wer möchte, stellt in den Einstellungen „Automatisch leeren nach … Tagen" ein – standardmäßig ist das aus.
 
@@ -222,11 +241,13 @@ Danach gleicht SitzNotes automatisch ab: beim Start, alle paar Minuten, kurz nac
 - **Nicht synchronisiert** werden gerätespezifische Dinge: Tastenkürzel, Fensterpositionen, Sicherungen, ausgeblendete Bereiche, die LaTeX-Engine und „Externe Programme erlauben" einer Projektarbeit.
 - Sync ist **keine Sicherung**: Löschen wird ebenfalls übertragen. Die automatischen Sicherungen laufen weiter.
 - Sync ausschalten oder ein Gerät entfernen geht jederzeit – lokale Daten bleiben erhalten.
+- **Alle Geräte aktuell halten:** Bringt eine neue Version neue Daten mit (z. B. 0.5.1: Ordner, mehrere Mitarbeiter je Aufgabe), meldet ein Gerät mit älterer Version **„Bitte SitzNotes aktualisieren"** und gleicht bis zum Update nichts ab – es überschreibt nichts, und seine Änderungen werden nach dem Update übertragen.
 
 ## Datenschutz
 
 - Alle Karten, Bilder, Projektarbeiten und Einstellungen liegen **nur lokal** auf deinem Gerät (Windows: `%APPDATA%\de.sitzmedia.sitznotes`, macOS: `~/Library/Application Support/de.sitzmedia.sitznotes`).
 - **Kein Konto, kein Server, keine Telemetrie.** SitzNotes funktioniert vollständig ohne Internet.
+- **Diktat:** Was du diktierst, wird lokal in Text umgewandelt – es wird kein Audio gespeichert oder übertragen.
 - **Sprachaufnahmen** bleiben auf deinem Gerät (und in deinem Sync-Ordner). Die Umwandlung in Text läuft **lokal** (whisper.cpp). Das Sprachmodell wird **nur nach deiner Zustimmung** einmalig von huggingface.co geladen; dabei werden keine Daten von dir übertragen. Das Modell wird nicht synchronisiert und lässt sich jederzeit entfernen.
 - Ins Internet geht SitzNotes nur für die **Update-Suche** (eine kleine Abfrage bei GitHub, abschaltbar) und – nur wenn du Projektarbeiten mit dem mitgelieferten Tectonic nutzt – zum einmaligen Laden von LaTeX-Paketen. Dabei werden keine Daten von dir übertragen.
 - **Sync** läuft nur über den Ordner, den du selbst wählst; SitzNotes betreibt keinen Server. Mit Ende-zu-Ende-Verschlüsselung (AES-256) sieht der Cloud-Anbieter nur verschlüsselte Dateien; der Schlüssel liegt im Schlüsselbund bzw. in der Windows-Anmeldeinformationsverwaltung deiner Geräte.
@@ -242,7 +263,8 @@ Danach gleicht SitzNotes automatisch ab: beim Start, alle paar Minuten, kurz nac
 - „Als PDF speichern" direkt aus der Druckansicht gibt es unter Windows; auf dem Mac im Druckdialog **„PDF → Als PDF sichern"** wählen.
 - Sync über einen Ordner ist so schnell wie dein Cloud-Dienst (meist Sekunden bis wenige Minuten).
 - Skripte & Handschrift sind eine **Beta**. Eine Skizze in einer Notiz wird als Bild eingefügt und lässt sich danach nicht mehr als Zeichnung bearbeiten (dafür die Notizbücher nutzen).
-- Für Sprachaufnahmen braucht SitzNotes ein Mikrofon; macOS fragt beim ersten Mal nach der Freigabe.
+- Für Sprachaufnahmen und Diktat braucht SitzNotes ein Mikrofon; macOS fragt beim ersten Mal nach der Freigabe. Das Diktat braucht ein geladenes Sprachmodell (siehe Tipps).
+- Die Formerkennung erkennt einfache Formen (Gerade, Pfeil, Rechteck, Kreis/Ellipse, Dreieck); gedrehte Ellipsen und Vielecke mit mehr Ecken bleiben Freihandstriche.
 - Noch nicht enthalten: iPhone/iPad (mit Apple Pencil folgt mit der iPad-App), Mindmap/Canvas, Wireframes – diese kommen in späteren Versionen.
 
 ## Patchnotes
