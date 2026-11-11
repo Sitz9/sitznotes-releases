@@ -39,6 +39,9 @@
 - **Synchronisation über deinen eigenen Ordner** (OneDrive, iCloud Drive, Dropbox, Google Drive oder NAS): PC und Mac bleiben automatisch auf demselben Stand – ohne Konto und ohne SitzNotes-Server, optional **Ende-zu-Ende-verschlüsselt**. Gleichzeitig auf zwei Geräten geändert? Dann gibt es eine **Konfliktkopie** statt Datenverlust.
 - **Kalender & Erinnerungen:** Fälligkeit, Erinnerungen und Wiedervorlage an jeder Karte, Kalender (Monat/Woche/Agenda) mit Drag & Drop, **„Heute & überfällig"** in der Seitenleiste, Erinnerungen mit „Öffnen", „Erledigt" und „Später" – auch wenn das Fenster geschlossen ist. Export als **.ics** für Outlook, Apple oder Google Kalender.
 - **Quick Capture versteht Zeitangaben** wie „morgen 9 Uhr", „Freitag" oder „in 2 Wochen" und setzt die Fälligkeit.
+- **Skripte & Handschrift (Beta):** Vorlesungsskripte und Übungsblätter als **PDF importieren** oder **Notizbücher** mit leeren, linierten, karierten oder Punkt-Seiten anlegen – und mit **druckempfindlichem Stift**, **Textmarker**, **Radierer** (ganzer Strich oder nur ein Bereich), **Lineal/geraden Linien**, **Formen** und **Lasso** bearbeiten. **Seiten an jeder Stelle einfügen**, duplizieren, löschen und umsortieren – der Platz beim Rechnen geht nie aus. Zoom, Seitenübersicht, **Suche im PDF-Text**, **Export als PDF mit Handschrift** (das Original bleibt unverändert), Seite oder Ausschnitt als Bild in eine Notiz. Funktioniert mit Maus, Touch und Grafiktablett.
+- **Skizze in jeder Notiz:** Baustein „Skizze" in der Einfügen-Leiste (oder `/skizze`) – kurz zeichnen, als Bild einfügen.
+- **Sprachnotizen:** Aufnahme direkt in einer Karte (Einfügen-Leiste „Sprache" oder `/sprache`) und im Quick Capture (🎙️), mit Player. Auf Wunsch **lokal in Text umgewandelt** – auf deinem Gerät, ohne Cloud.
 - **Fixes 🐞:** eigene Spalte im Board direkt nach der Inbox; Schalter **„Nur Fixes"** zeigt nur Fehler und Korrekturen.
 - **Liste und Board** (Kanban nach Status mit Drag & Drop), **Spalten auf- und zuklappbar, ausblendbar und umsortierbar**, **eigene Spalten** mit Name, Farbe und Symbol (Rechtsklick auf den Spaltenkopf), Schalter **„Erledigte ausblenden"**.
 - **Spaces archivieren:** Abgeschlossenes verschwindet aus dem Alltag, bleibt im **Archiv** lesbar und lässt sich jederzeit wiederherstellen.
@@ -57,6 +60,10 @@
 
 <p align="center">
   <img src="assets/screenshots/sitznotes-board.png" alt="SitzNotes: Board nach Status mit Fixes-Spalte" width="900">
+</p>
+
+<p align="center">
+  <img src="assets/screenshots/sitznotes-handschrift.png" alt="SitzNotes: Vorlesungsskript mit Handschrift, Textmarker und Formen (Beta)" width="900">
 </p>
 
 <p align="center">
@@ -127,6 +134,9 @@ und die Sicherungen darin gelöscht.
 | **/** | beim Bearbeiten: Baustein einfügen (Checkliste, Formel, Bild …) |
 | **Strg+S** | in einer Projektarbeit: speichern und PDF sofort erzeugen |
 | **Rechtsklick** auf einen Spaltenkopf | Board: Spalte ausblenden, verschieben, Spalten anpassen |
+| **Strg+Z** / **Strg+Y** | in Skripten & Notizbüchern: rückgängig / wiederholen |
+| **Umschalt** beim Ziehen | gerade Linie bzw. Pfeil in 15°-Schritten |
+| **Entf** | Lasso-Auswahl löschen |
 | **← / →** | im Besprechungsmodus: Tag bzw. Woche blättern (**Esc** beendet) |
 | **Esc** | Karte schließen |
 
@@ -142,7 +152,10 @@ Auf dem Mac jeweils **⌘** statt **Strg**.
 - **Board für den Überblick:** Karten per Drag & Drop in die nächste Spalte ziehen; Spalten, die du gerade nicht brauchst, per Klick auf den Spaltenkopf zuklappen; „Erledigte ausblenden" hält das Board übersichtlich.
 - **Projektarbeit neben den Notizen:** Ordne die Projektarbeit dem Space mit deinen Recherche-Notizen zu – unter „Notizen" stehen sie neben dem Editor und lassen sich per Klick als LaTeX einfügen. Bilder einfach in die Dateiliste oder den Editor ziehen.
 - **Verknüpfen statt kopieren:** Gehört eine Idee zu einer anderen, verknüpfe sie – in beiden Karten ist die Verbindung sichtbar.
-- **Diktieren statt tippen:** Systemeigenes Diktieren funktioniert in jedem Textfeld von SitzNotes – **Windows: Win+H**, **macOS: Diktierfunktion** (z. B. zweimal **Fn** bzw. die **Globus-Taste**).
+- **Diktieren statt tippen:** Systemeigenes Diktieren funktioniert in jedem Textfeld von SitzNotes – **Windows: Win+H**, **macOS: Diktierfunktion** (z. B. zweimal **Fn** bzw. die **Globus-Taste**). Für längere Gedanken unterwegs: **🎙️ im Quick Capture** – die Aufnahme landet in der Inbox, mit Sprachmodell gleich als Text.
+- **Sprache in Text – lokal:** Einstellungen → **„Sprache & Diktat"** → Modell laden („Genauer", ca. 180 MB, empfohlen – oder „Schnell", ca. 57 MB). Die Größe siehst du vor dem Download; danach läuft alles offline. Mit „automatisch umwandeln" steht der Text direkt unter jeder Aufnahme.
+- **Skript in der Vorlesung:** PDF importieren, mit dem **Textmarker** markieren, mit dem **Stift** mitschreiben; wird es eng, unter der Seite „+ Kariert" einfügen und dort weiterrechnen. Am Ende **„Als PDF exportieren"** für eine Kopie mit allen Notizen.
+- **Mit Grafiktablett oder Touchscreen:** Sobald ein Stift erkannt wird, schaltet sich **„Nur Stift zeichnet"** ein – Finger blättern dann nur (Handballen-Schutz).
 - **Sicherungsordner außerhalb des App-Datenordners wählen** (Einstellungen → Sicherungsordner), z. B. **Dokumente**, ein **NAS** oder ein Cloud-Ordner. Dann überstehen deine Sicherungen auch eine Deinstallation oder einen Rechnerwechsel.
 - **PC und Mac synchron halten:** Einmal einen gemeinsamen Ordner einrichten (siehe „Synchronisation" unten) – danach musst du nichts mehr tun. Ohne Sync geht es weiterhin per Export/Import: auf dem einen Gerät „Alles exportieren (.sitznotes)", auf dem anderen importieren.
 - **Termine direkt beim Festhalten:** Schreib im Quick Capture z. B. „Mail an Betreuer morgen 9 Uhr" – SitzNotes erkennt die Zeit, zeigt sie vor dem Speichern an und erinnert dich pünktlich. Mit ✕ in der Vorschau übernimmst du die Zeitangabe nicht.
@@ -214,6 +227,7 @@ Danach gleicht SitzNotes automatisch ab: beim Start, alle paar Minuten, kurz nac
 
 - Alle Karten, Bilder, Projektarbeiten und Einstellungen liegen **nur lokal** auf deinem Gerät (Windows: `%APPDATA%\de.sitzmedia.sitznotes`, macOS: `~/Library/Application Support/de.sitzmedia.sitznotes`).
 - **Kein Konto, kein Server, keine Telemetrie.** SitzNotes funktioniert vollständig ohne Internet.
+- **Sprachaufnahmen** bleiben auf deinem Gerät (und in deinem Sync-Ordner). Die Umwandlung in Text läuft **lokal** (whisper.cpp). Das Sprachmodell wird **nur nach deiner Zustimmung** einmalig von huggingface.co geladen; dabei werden keine Daten von dir übertragen. Das Modell wird nicht synchronisiert und lässt sich jederzeit entfernen.
 - Ins Internet geht SitzNotes nur für die **Update-Suche** (eine kleine Abfrage bei GitHub, abschaltbar) und – nur wenn du Projektarbeiten mit dem mitgelieferten Tectonic nutzt – zum einmaligen Laden von LaTeX-Paketen. Dabei werden keine Daten von dir übertragen.
 - **Sync** läuft nur über den Ordner, den du selbst wählst; SitzNotes betreibt keinen Server. Mit Ende-zu-Ende-Verschlüsselung (AES-256) sieht der Cloud-Anbieter nur verschlüsselte Dateien; der Schlüssel liegt im Schlüsselbund bzw. in der Windows-Anmeldeinformationsverwaltung deiner Geräte.
 - **Einsatzplanung:** Mitarbeiterdaten sind personenbezogene Daten. Die Nutzung im Unternehmen ist ggf. mit Datenschutzbeauftragten bzw. Betriebsrat abzustimmen. Beim Sync über Cloud-Dienste bitte die Ende-zu-Ende-Verschlüsselung verwenden.
@@ -227,7 +241,9 @@ Danach gleicht SitzNotes automatisch ab: beim Start, alle paar Minuten, kurz nac
 - Erinnerungen erscheinen in einem kleinen SitzNotes-Hinweisfenster (plus Systembenachrichtigung) – SitzNotes muss dafür laufen (im Tray genügt).
 - „Als PDF speichern" direkt aus der Druckansicht gibt es unter Windows; auf dem Mac im Druckdialog **„PDF → Als PDF sichern"** wählen.
 - Sync über einen Ordner ist so schnell wie dein Cloud-Dienst (meist Sekunden bis wenige Minuten).
-- Noch nicht enthalten: iPhone/iPad, Sprachaufnahme, Zeichnen, Mindmap/Canvas, Wireframes – diese kommen in späteren Versionen.
+- Skripte & Handschrift sind eine **Beta**. Eine Skizze in einer Notiz wird als Bild eingefügt und lässt sich danach nicht mehr als Zeichnung bearbeiten (dafür die Notizbücher nutzen).
+- Für Sprachaufnahmen braucht SitzNotes ein Mikrofon; macOS fragt beim ersten Mal nach der Freigabe.
+- Noch nicht enthalten: iPhone/iPad (mit Apple Pencil folgt mit der iPad-App), Mindmap/Canvas, Wireframes – diese kommen in späteren Versionen.
 
 ## Patchnotes
 
