@@ -43,6 +43,11 @@
   - **Ordner/Kurse:** z. B. „Mathe 1" mit Unterordnern, Farbe und Symbol, optional einem Space zugeordnet – Skripte und Notizbücher per Drag & Drop einsortieren.
   - **Kopieren, Ausschneiden, Einfügen, Duplizieren:** mit dem Lasso auswählen, dann über die Leiste an der Auswahl, per Rechtsklick (bzw. langes Drücken) oder mit **Strg+C / Strg+X / Strg+V / Strg+D** – auch auf andere Seiten und in andere Notizbücher.
   - **Formerkennung durch Halten:** Strich zeichnen und am Ende kurz stillhalten – daraus wird eine saubere **Gerade** (rastet waagerecht/senkrecht ein, ideal für Bruchstriche), ein **Kreis**, eine **Ellipse**, ein **Rechteck/Quadrat**, ein **Dreieck** oder ein **Pfeil**. **Strg+Z** holt den Strich zurück.
+  - **Bereich als Bild kopieren:** Mit dem Lasso (Freihand oder Rechteck) einen Bereich auswählen – **auch Text und Abbildungen aus dem PDF** – und „Als Bild kopieren": alles im Bereich wird in hoher Auflösung samt Handschrift übernommen. Einfügen auf jeder Seite, auf leeren Seiten und in anderen Notizbüchern als verschiebbares, skalierbares Bild. Bilder und **Screenshots aus anderen Apps** fügst du mit **Strg+V** ein.
+  - **Textfelder und Formeln:** Mit dem Textwerkzeug (**T**) an beliebiger Stelle schreiben oder **diktieren** – Schriftart, Größe, Farbe, fett/kursiv, Ausrichtung. **T** noch einmal ergibt ein **Formel-Textfeld** (LaTeX, z. B. `\frac{a}{b}`). Im PDF-Export als echter, **durchsuchbarer Text**; die Suche im Skript findet ihn.
+  - **Werkzeuge nach Wunsch:** Ein zweiter Klick auf das aktive Werkzeug öffnet seine Einstellungen – Stiftart (**Füller, Kugelschreiber, Pinsel**), Farben mit eigener Farbauswahl und **Favoriten** (auf allen Geräten gleich), Stärke-Regler mit Vorschau, Druckempfindlichkeit, Glättung; Textmarker mit Deckkraft und „gerade Linie"; Radierer für Striche oder Bereiche, auch „nur Textmarker".
+  - **Schwebende Werkzeugleiste:** schwebt über der Seite, lässt sich am Griff frei verschieben, rastet an den Rändern ein und klappt zur kleinen Pille zusammen – oder oben, unten, links bzw. rechts andocken. Seitenübersicht und Seitenleiste lassen sich einklappen.
+- **Vorstellungsmodus:** Skript oder Notizbuch Seite für Seite im **Vollbild präsentieren** – auf deinem Bildschirm oder auf einem **zweiten Bildschirm bzw. Beamer**, während du auf deinem Bildschirm die **Referentenansicht** (aktuelle und nächste Seite, Zeit) steuerst. Weiter mit Pfeiltasten, Leertaste oder dem **Präsentations-Klicker**; **Laserpointer** als Punkt oder als Laserstift, dessen Striche nach kurzer Zeit verschwinden (wird nie gespeichert). Während der Präsentation kannst du normal weiterschreiben.
 - **Skizze in jeder Notiz:** Baustein „Skizze" in der Einfügen-Leiste (oder `/skizze`) – kurz zeichnen, als Bild einfügen.
 - **Direkt diktieren:** In jedem Textfeld (Notiz, Quick Capture, Einsatzplanung, LaTeX-Editor) auf 🎙️ klicken oder **Strg+Umschalt+D** drücken – sprechen – und der Text steht an der Cursor-Stelle, mit Satzzeichen und Großschreibung. Kürzel **gedrückt halten** = sprechen, loslassen = einfügen; **Esc** bricht ab. Optional **Dauer-Diktat**. Läuft **lokal** auf deinem Gerät, ohne Cloud; beim Diktat wird kein Audio gespeichert.
 - **Sprachnotizen:** Aufnahme direkt in einer Karte (Einfügen-Leiste „Sprache" oder `/sprache`) und im Quick Capture (🎙️), mit Player. Auf Wunsch **lokal in Text umgewandelt** – auf deinem Gerät, ohne Cloud.
@@ -59,7 +64,7 @@
 - **Automatische Sicherung** täglich (die letzten 10 Stände) und **vor jedem Update**.
 - **Updates direkt in SitzNotes:** Hinweis mit den Neuerungen, „Jetzt installieren" oder „Später" – nie ungefragt.
 - **Papierkorb** mit „Endgültig löschen" und „Papierkorb leeren" (mit Sicherheitsabfrage), auf Wunsch automatisch nach einer gewählten Zahl von Tagen.
-- **Passt sich deinem Monitor an:** von Laptop bis 4K, mit jeder Windows-Skalierung und auf Retina-Displays.
+- **Passt sich deinem Monitor an:** von Laptop bis 4K, mit jeder Windows-Skalierung und auf Retina-Displays. Die Seitenleiste lässt sich auf eine schmale Leiste mit dem Logo einklappen (**Strg+B**).
 - Dunkles Design, alle Links öffnen im Standard-Browser.
 
 <p align="center">
@@ -68,6 +73,18 @@
 
 <p align="center">
   <img src="assets/screenshots/sitznotes-handschrift.png" alt="SitzNotes: Vorlesungsskript mit Handschrift, Textmarker und Formen (Beta)" width="900">
+</p>
+
+<p align="center">
+  <img src="assets/screenshots/sitznotes-textfeld.png" alt="SitzNotes: Skript mit Handschrift, Textfeldern und Formel – schwebende Werkzeugleiste" width="900">
+</p>
+
+<p align="center">
+  <img src="assets/screenshots/sitznotes-werkzeuge.png" alt="SitzNotes: Stift-Einstellungen mit Stiftart, Farben, Favoriten und Stärke" width="900">
+</p>
+
+<p align="center">
+  <img src="assets/screenshots/sitznotes-vorstellen.png" alt="SitzNotes: Vorstellungsmodus – Referentenansicht mit Laserpointer" width="900">
 </p>
 
 <p align="center">
@@ -146,7 +163,12 @@ und die Sicherungen darin gelöscht.
 | **/** | beim Bearbeiten: Baustein einfügen (Checkliste, Formel, Bild …) |
 | **Strg+S** | in einer Projektarbeit: speichern und PDF sofort erzeugen |
 | **Rechtsklick** auf einen Spaltenkopf | Board: Spalte ausblenden, verschieben, Spalten anpassen |
+| **Strg+B** | Seitenleiste ein-/ausklappen |
 | **Strg+Z** / **Strg+Y** | in Skripten & Notizbüchern: rückgängig / wiederholen |
+| **P** / **M** / **E** / **L** / **T** / **K** / **H** | Skripte: Stift / Textmarker / Radierer / Lasso / Textfeld / Laserpointer / Hand |
+| **L** bzw. **T** noch einmal | Lasso Freihand ↔ Rechteck bzw. Textfeld ↔ Formel |
+| Zweiter Klick auf das aktive Werkzeug | Einstellungen des Werkzeugs (Stiftart, Farbe, Stärke …) |
+| **Esc** / **Strg+Enter** | Textfeld übernehmen; **Strg+B** / **Strg+I** darin: fett / kursiv |
 | **Umschalt** beim Ziehen | gerade Linie bzw. Pfeil in 15°-Schritten |
 | **Strg+C** / **Strg+X** / **Strg+V** / **Strg+D** / **Entf** | Lasso-Auswahl kopieren / ausschneiden / einfügen / duplizieren / löschen |
 | **Rechtsklick** bzw. **langes Drücken** auf eine Seite | Menü: Kopieren, Ausschneiden, Duplizieren, Löschen, Einfügen |
@@ -154,6 +176,8 @@ und die Sicherungen darin gelöscht.
 | **Strg+Umschalt+D** (halten oder drücken) | in jedem Textfeld diktieren (in den Einstellungen änderbar), **Esc** bricht ab |
 | **Strg** beim Ziehen einer Aufgabe | Einsatzplanung: weiteren Mitarbeiter hinzufügen |
 | **← / →** | im Besprechungsmodus: Tag bzw. Woche blättern (**Esc** beendet) |
+| **→ ↓ Leertaste Bild↓** / **← ↑ Bild↑** | Vorstellungsmodus: weiter / zurück (auch Präsentations-Klicker) |
+| **G** / **B** / **Pos1** / **Ende** / **Esc** | Vorstellungsmodus: Seitenübersicht / schwarzer Bildschirm / erste / letzte Seite / beenden |
 | **Esc** | Karte schließen |
 
 Auf dem Mac jeweils **⌘** statt **Strg**.
@@ -174,6 +198,12 @@ Auf dem Mac jeweils **⌘** statt **Strg**.
 - **Saubere Skizzen ohne Lineal:** Bruchstrich, Achsen oder Kästen einfach zeichnen und am Ende kurz stillhalten. Rechenweg auf eine neue Seite übernehmen: mit dem Lasso auswählen, **Strg+C**, auf der neuen Seite **Strg+V**.
 - **Skript in der Vorlesung:** PDF importieren, mit dem **Textmarker** markieren, mit dem **Stift** mitschreiben; wird es eng, unter der Seite „+ Kariert" einfügen und dort weiterrechnen. Am Ende **„Als PDF exportieren"** für eine Kopie mit allen Notizen.
 - **Mit Grafiktablett oder Touchscreen:** Sobald ein Stift erkannt wird, schaltet sich **„Nur Stift zeichnet"** ein – Finger blättern dann nur (Handballen-Schutz).
+- **Abbildung aus dem Skript übernehmen:** Lasso auf **Rechteck** stellen (Taste **L** zweimal), die Abbildung oder Formel im PDF umrahmen, **„Als Bild kopieren"** – auf einer leeren Seite **Strg+V** und daneben weiterrechnen. Das Original-PDF bleibt unverändert.
+- **Tippen statt schreiben, wo es sauber sein soll:** Mit **T** ein Textfeld für Überschriften oder Merksätze setzen, mit **T** noch einmal eine Formel; mit **Strg+Umschalt+D** auch direkt hineindiktieren.
+- **Lieblingsfarben merken:** Im Stift-Menü eine eigene Farbe wählen und mit **☆** als Favorit merken – sie steht dann auch auf deinen anderen Geräten zur Verfügung.
+- **Präsentieren mit Beamer:** Beamer anschließen (Windows: **Win+P** → „Erweitern", macOS: Systemeinstellungen → Displays), dann im Skript **„▶ Vorstellen"** → den zweiten Bildschirm wählen. Auf deinem Bildschirm siehst du die nächste Seite und die Zeit; der Klicker blättert. Mit **B** wird der Beamer kurz schwarz, mit **G** springst du über die Seitenübersicht zu jeder Seite.
+- **Laserpointer zum Erklären:** Taste **K** – als Punkt zeigt er, als Laserstift (im Menü „Spur") malst du Kreise und Pfeile, die von selbst wieder verschwinden.
+- **Mehr Platz auf kleinen Bildschirmen:** Seitenleiste mit **Strg+B** einklappen, Seitenübersicht und Seitenleiste im Skript mit **«** / **»** zuklappen, die Werkzeugleiste zur Pille einklappen.
 - **Sicherungsordner außerhalb des App-Datenordners wählen** (Einstellungen → Sicherungsordner), z. B. **Dokumente**, ein **NAS** oder ein Cloud-Ordner. Dann überstehen deine Sicherungen auch eine Deinstallation oder einen Rechnerwechsel.
 - **PC und Mac synchron halten:** Einmal einen gemeinsamen Ordner einrichten (siehe „Synchronisation" unten) – danach musst du nichts mehr tun. Ohne Sync geht es weiterhin per Export/Import: auf dem einen Gerät „Alles exportieren (.sitznotes)", auf dem anderen importieren.
 - **Termine direkt beim Festhalten:** Schreib im Quick Capture z. B. „Mail an Betreuer morgen 9 Uhr" – SitzNotes erkennt die Zeit, zeigt sie vor dem Speichern an und erinnert dich pünktlich. Mit ✕ in der Vorschau übernimmst du die Zeitangabe nicht.
@@ -241,7 +271,8 @@ Danach gleicht SitzNotes automatisch ab: beim Start, alle paar Minuten, kurz nac
 - **Nicht synchronisiert** werden gerätespezifische Dinge: Tastenkürzel, Fensterpositionen, Sicherungen, ausgeblendete Bereiche, die LaTeX-Engine und „Externe Programme erlauben" einer Projektarbeit.
 - Sync ist **keine Sicherung**: Löschen wird ebenfalls übertragen. Die automatischen Sicherungen laufen weiter.
 - Sync ausschalten oder ein Gerät entfernen geht jederzeit – lokale Daten bleiben erhalten.
-- **Alle Geräte aktuell halten:** Bringt eine neue Version neue Daten mit (z. B. 0.5.1: Ordner, mehrere Mitarbeiter je Aufgabe), meldet ein Gerät mit älterer Version **„Bitte SitzNotes aktualisieren"** und gleicht bis zum Update nichts ab – es überschreibt nichts, und seine Änderungen werden nach dem Update übertragen.
+- **Verschiedene Versionen auf den Geräten (ab 0.5.2):** Ein Gerät mit älterer Version synchronisiert weiter, auch wenn ein anderes schon neuere Funktionen nutzt – neue Inhalte (z. B. Textfelder oder Bilder in Skripten) werden aufbewahrt und weitergegeben, nichts wird überschrieben. Anzeigen kann das ältere Gerät sie erst nach dem Update. In den Sync-Einstellungen siehst du, welches Gerät eine neuere oder ältere Version nutzt. Trotzdem empfohlen: **alle Geräte zeitnah aktualisieren.**
+- Ein Gerät mit **0.5.0** meldet bei Daten neuerer Versionen weiterhin **„Bitte SitzNotes aktualisieren"** und gleicht bis zum Update nichts ab – es überschreibt nichts, und seine Änderungen werden nach dem Update übertragen.
 
 ## Datenschutz
 
@@ -265,6 +296,9 @@ Danach gleicht SitzNotes automatisch ab: beim Start, alle paar Minuten, kurz nac
 - Skripte & Handschrift sind eine **Beta**. Eine Skizze in einer Notiz wird als Bild eingefügt und lässt sich danach nicht mehr als Zeichnung bearbeiten (dafür die Notizbücher nutzen).
 - Für Sprachaufnahmen und Diktat braucht SitzNotes ein Mikrofon; macOS fragt beim ersten Mal nach der Freigabe. Das Diktat braucht ein geladenes Sprachmodell (siehe Tipps).
 - Die Formerkennung erkennt einfache Formen (Gerade, Pfeil, Rechteck, Kreis/Ellipse, Dreieck); gedrehte Ellipsen und Vielecke mit mehr Ecken bleiben Freihandstriche.
+- Textfelder nutzen drei Schriftarten (ohne Serifen, mit Serifen, Schreibmaschine). Zeichen, die diese PDF-Standardschriften nicht kennen (z. B. Emojis), erscheinen im PDF-Export als „?".
+- „Einfügen" im Rechtsklick-Menü nimmt Bilder aus anderen Apps nicht überall an – dafür **Strg+V** verwenden.
+- Ein Gerät mit 0.5.1 zeigt Textfelder, Formeln und eingefügte Bilder in Skripten erst nach dem Update auf 0.5.2 an (sie gehen dabei nicht verloren).
 - Noch nicht enthalten: iPhone/iPad (mit Apple Pencil folgt mit der iPad-App), Mindmap/Canvas, Wireframes – diese kommen in späteren Versionen.
 
 ## Patchnotes
