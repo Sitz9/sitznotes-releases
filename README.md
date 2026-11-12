@@ -126,7 +126,7 @@ Mit `SHA256SUMS.txt` kannst du prüfen, ob der Download unverändert ist.
 
 ### iPad (Beta, noch nicht im App Store)
 
-Die iPad-App (ab 0.6.0) hat dieselbe Oberfläche und dieselben Daten wie am PC/Mac – mit **Apple Pencil** (Druck, Neigung, Doppeltipp, Schweben, Handballen-Schutz), Touch-Bedienung, Split View/Slide Over, Hardware-Tastatur, Mitteilungen für Erinnerungen und Sync über die Dateien-App (OneDrive, iCloud Drive, Dropbox). Projektarbeiten lassen sich auf dem iPad bearbeiten; kompiliert wird am PC/Mac. Diktat über die Diktiertaste der iPad-Tastatur.
+Die iPad-App (ab 0.6.0) hat dieselbe Oberfläche und dieselben Daten wie am PC/Mac – mit **Apple Pencil** (Druck, Neigung, Doppeltipp, Schweben, Handballen-Schutz, sehr geringe Verzögerung), Zoomen mit zwei Fingern, **Rückgängig/Wiederholen mit zwei bzw. drei Fingern tippen**, Touch-Bedienung, Split View/Slide Over, Hardware-Tastatur, Mitteilungen für Erinnerungen, **Live-Diktat** mit der Spracherkennung von Apple auf dem iPad und Sync – **OneDrive direkt** (Anmeldung mit dem Microsoft-Konto, ab 0.6.1) oder über die Dateien-App (iCloud Drive, NAS). Projektarbeiten lassen sich auf dem iPad bearbeiten; kompiliert wird am PC/Mac.
 
 Sie ist derzeit eine **Beta zum eigenen Testen** und **noch nicht im App Store** erhältlich (auch nicht über TestFlight). Sobald sie verfügbar ist, steht es hier.
 
@@ -170,6 +170,8 @@ und die Sicherungen darin gelöscht.
 | **Strg+S** | in einer Projektarbeit: speichern und PDF sofort erzeugen |
 | **Rechtsklick** auf einen Spaltenkopf | Board: Spalte ausblenden, verschieben, Spalten anpassen |
 | **Strg+B** | Seitenleiste ein-/ausklappen |
+| **Strg + Mausrad** (Windows) · **⌘ + Mausrad** / Trackpad-Pinch (macOS) · zwei Finger (iPad) | in Skripten zoomen – der Punkt unter Maus bzw. Fingern bleibt stehen |
+| **Zwei Finger tippen** / **drei Finger tippen** (iPad) | in Skripten: rückgängig / wiederholen |
 | **Strg+Z** / **Strg+Y** | in Skripten & Notizbüchern: rückgängig / wiederholen |
 | **P** / **M** / **E** / **L** / **T** / **K** / **H** | Skripte: Stift / Textmarker / Radierer / Lasso / Textfeld / Laserpointer / Hand |
 | **L** bzw. **T** noch einmal | Lasso Freihand ↔ Rechteck bzw. Textfeld ↔ Formel |
@@ -178,7 +180,7 @@ und die Sicherungen darin gelöscht.
 | **Umschalt** beim Ziehen | gerade Linie bzw. Pfeil in 15°-Schritten |
 | **Strg+C** / **Strg+X** / **Strg+V** / **Strg+D** / **Entf** | Lasso-Auswahl kopieren / ausschneiden / einfügen / duplizieren / löschen |
 | **Rechtsklick** bzw. **langes Drücken** auf eine Seite | Menü: Kopieren, Ausschneiden, Duplizieren, Löschen, Einfügen |
-| Am Strichende **kurz stillhalten** | Formerkennung (Gerade, Kreis, Rechteck, Dreieck, Pfeil …) |
+| Am Strichende **kurz stillhalten** | begradigen: Linie (waagerecht/senkrecht rastet ein), Kreis, Ellipse, Rechteck, Dreieck, Wurzelzeichen; Pfeil nur mit gezeichneter Spitze |
 | **Strg+Umschalt+D** (halten oder drücken) | in jedem Textfeld diktieren (in den Einstellungen änderbar), **Esc** bricht ab |
 | **Strg** beim Ziehen einer Aufgabe | Einsatzplanung: weiteren Mitarbeiter hinzufügen |
 | **← / →** | im Besprechungsmodus: Tag bzw. Woche blättern (**Esc** beendet) |
@@ -199,7 +201,7 @@ Auf dem Mac jeweils **⌘** statt **Strg**.
 - **Board für den Überblick:** Karten per Drag & Drop in die nächste Spalte ziehen; Spalten, die du gerade nicht brauchst, per Klick auf den Spaltenkopf zuklappen; „Erledigte ausblenden" hält das Board übersichtlich.
 - **Projektarbeit neben den Notizen:** Ordne die Projektarbeit dem Space mit deinen Recherche-Notizen zu – unter „Notizen" stehen sie neben dem Editor und lassen sich per Klick als LaTeX einfügen. Bilder einfach in die Dateiliste oder den Editor ziehen.
 - **Verknüpfen statt kopieren:** Gehört eine Idee zu einer anderen, verknüpfe sie – in beiden Karten ist die Verbindung sichtbar.
-- **Diktieren statt tippen:** In jedes Textfeld klicken und **Strg+Umschalt+D gedrückt halten**, sprechen, loslassen – fertig. Für Umbrüche „neue Zeile" bzw. „neuer Absatz" sagen. Für längere Texte in den Einstellungen das **Dauer-Diktat** einschalten. Alternativ funktioniert auch das Diktieren des Systems (**Windows: Win+H**, **macOS:** zweimal **Fn** bzw. **Globus-Taste**). Für längere Gedanken unterwegs: **🎙️ im Quick Capture** – die Aufnahme landet in der Inbox, mit Sprachmodell gleich als Text.
+- **Diktieren statt tippen:** In jedes Textfeld klicken und **Strg+Umschalt+D gedrückt halten**, sprechen, loslassen – fertig. Für Umbrüche „neue Zeile" bzw. „neuer Absatz" sagen. Ab 0.6.1 erscheint der Text bei längeren Diktaten nach jeder kurzen Sprechpause (**Dauer-Diktat**, in den Einstellungen abschaltbar). Auf dem **iPad** auf 🎙️ tippen: Der Text erscheint live beim Sprechen. Alternativ funktioniert auch das Diktieren des Systems (**Windows: Win+H**, **macOS:** zweimal **Fn** bzw. **Globus-Taste**). Für längere Gedanken unterwegs: **🎙️ im Quick Capture** – die Aufnahme landet in der Inbox, mit Sprachmodell gleich als Text.
 - **Sprache in Text – lokal:** Einstellungen → **„Sprache & Diktat"** → Modell laden („Genauer", ca. 180 MB, empfohlen – oder „Schnell", ca. 57 MB). Die Größe siehst du vor dem Download; danach läuft alles offline. Mit „automatisch umwandeln" steht der Text direkt unter jeder Aufnahme. Ist dir das Diktat zu langsam, wähle dort „Schnell".
 - **Ein Ordner je Vorlesung:** In „Skripte & Handschrift" einen Ordner pro Kurs anlegen und ihm den Space des Kurses geben – neue Skripte darin landen automatisch im richtigen Space.
 - **Saubere Skizzen ohne Lineal:** Bruchstrich, Achsen oder Kästen einfach zeichnen und am Ende kurz stillhalten. Rechenweg auf eine neue Seite übernehmen: mit dem Lasso auswählen, **Strg+C**, auf der neuen Seite **Strg+V**.
@@ -291,6 +293,8 @@ Danach gleicht SitzNotes automatisch ab: beim Start, alle paar Minuten, kurz nac
 - **Sprachaufnahmen** bleiben auf deinem Gerät (und in deinem Sync-Ordner). Die Umwandlung in Text läuft **lokal** (whisper.cpp). Das Sprachmodell wird **nur nach deiner Zustimmung** einmalig von huggingface.co geladen; dabei werden keine Daten von dir übertragen. Das Modell wird nicht synchronisiert und lässt sich jederzeit entfernen.
 - Ins Internet geht SitzNotes nur für die **Update-Suche** (eine kleine Abfrage bei GitHub, abschaltbar) und – nur wenn du Projektarbeiten mit dem mitgelieferten Tectonic nutzt – zum einmaligen Laden von LaTeX-Paketen. Dabei werden keine Daten von dir übertragen.
 - **Sync** läuft nur über den Ordner, den du selbst wählst; SitzNotes betreibt keinen Server. Mit Ende-zu-Ende-Verschlüsselung (AES-256) sieht der Cloud-Anbieter nur verschlüsselte Dateien; der Schlüssel liegt im Schlüsselbund bzw. in der Windows-Anmeldeinformationsverwaltung deiner Geräte.
+- **OneDrive (direkt) am iPad:** SitzNotes meldet sich mit deinem Microsoft-Konto bei Microsoft an und spricht dabei nur mit Microsoft – kein Server von SitzNotes. Die Anmeldung liegt im iPad-Schlüsselbund; genutzt wird nur der Sync-Ordner, den du wählst. Widerrufen jederzeit unter account.live.com › Datenschutz › App-Zugriff.
+- **Live-Diktat am iPad:** Spracherkennung von Apple auf dem Gerät; kein Audio wird gespeichert oder an SitzNotes gesendet.
 - **iPad:** Daten im geschützten Speicher der App; automatische Sicherungen in der Dateien-App unter „Auf meinem iPad › SitzNotes › Sicherungen". Erinnerungen werden als lokale Mitteilungen auf dem iPad eingeplant – ohne Push-Server.
 - **Einsatzplanung:** Mitarbeiterdaten sind personenbezogene Daten. Die Nutzung im Unternehmen ist ggf. mit Datenschutzbeauftragten bzw. Betriebsrat abzustimmen. Beim Sync über Cloud-Dienste bitte die Ende-zu-Ende-Verschlüsselung verwenden.
 - Links öffnen immer in deinem Standard-Browser, nie in der App.
@@ -309,7 +313,7 @@ Danach gleicht SitzNotes automatisch ab: beim Start, alle paar Minuten, kurz nac
 - Textfelder nutzen drei Schriftarten (ohne Serifen, mit Serifen, Schreibmaschine). Zeichen, die diese PDF-Standardschriften nicht kennen (z. B. Emojis), erscheinen im PDF-Export als „?".
 - „Einfügen" im Rechtsklick-Menü nimmt Bilder aus anderen Apps nicht überall an – dafür **Strg+V** verwenden.
 - Ein Gerät mit 0.5.1 zeigt Textfelder, Formeln und eingefügte Bilder in Skripten erst nach dem Update auf 0.5.2 an (sie gehen dabei nicht verloren).
-- iPad-App: **Beta, noch nicht im App Store**; kein Kompilieren von LaTeX und kein lokales Diktat auf dem iPad (Diktiertaste von iPadOS nutzen); Abgleich nur, solange die App offen ist bzw. beim Öffnen/Verlassen.
+- iPad-App: **Beta, noch nicht im App Store**; kein Kompilieren von LaTeX auf dem iPad; Abgleich nur, solange die App offen ist bzw. beim Öffnen/Verlassen. OneDrive-Ordner lassen sich in der Dateien-App nicht für andere Apps freigeben – dafür gibt es „OneDrive (direkt)".
 - Noch nicht enthalten: iPhone-optimierte Bedienung, Widget und „Teilen an SitzNotes" auf dem iPad, Mindmap/Canvas, Wireframes – diese kommen in späteren Versionen.
 
 ## Patchnotes
