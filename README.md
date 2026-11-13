@@ -23,7 +23,7 @@
 </p>
 
 <p align="center">
-  <img src="assets/screenshots/sitznotes-liste.png" alt="SitzNotes: Liste und Detailansicht" width="900">
+  <img src="assets/screenshots/sitznotes-liste.png" alt="SitzNotes: alle Ideen als Liste mit Spaces und Tags" width="900">
 </p>
 
 ---
@@ -40,6 +40,7 @@
 - **Kalender & Erinnerungen:** Fälligkeit, Erinnerungen und Wiedervorlage an jeder Karte, Kalender (Monat/Woche/Agenda) mit Drag & Drop, **„Heute & überfällig"** in der Seitenleiste, Erinnerungen mit „Öffnen", „Erledigt" und „Später" – auch wenn das Fenster geschlossen ist. Export als **.ics** für Outlook, Apple oder Google Kalender.
 - **Quick Capture versteht Zeitangaben** wie „morgen 9 Uhr", „Freitag" oder „in 2 Wochen" und setzt die Fälligkeit.
 - **Skripte & Handschrift (Beta):** Vorlesungsskripte und Übungsblätter als **PDF importieren** oder **Notizbücher** mit leeren, linierten, karierten oder Punkt-Seiten anlegen – und mit **druckempfindlichem Stift**, **Textmarker**, **Radierer** (ganzer Strich oder nur ein Bereich), **Lineal/geraden Linien**, **Formen** und **Lasso** bearbeiten. **Seiten an jeder Stelle einfügen**, duplizieren, löschen und umsortieren – der Platz beim Rechnen geht nie aus. Zoom, Seitenübersicht, **Suche im PDF-Text**, **Export als PDF mit Handschrift** (das Original bleibt unverändert), Seite oder Ausschnitt als Bild in eine Notiz. Funktioniert mit Maus, Touch und Grafiktablett.
+  - **Mehrere Skripte gleichzeitig offen (ab 0.6.2):** Tableiste oben, jedes Skript behält Seite und Zoom, nach dem Neustart wieder da – ideal zum Kopieren aus dem Skript in die eigene Mitschrift.
   - **Ordner/Kurse:** z. B. „Mathe 1" mit Unterordnern, Farbe und Symbol, optional einem Space zugeordnet – Skripte und Notizbücher per Drag & Drop einsortieren.
   - **Kopieren, Ausschneiden, Einfügen, Duplizieren:** mit dem Lasso auswählen, dann über die Leiste an der Auswahl, per Rechtsklick (bzw. langes Drücken) oder mit **Strg+C / Strg+X / Strg+V / Strg+D** – auch auf andere Seiten und in andere Notizbücher.
   - **Formerkennung durch Halten:** Strich zeichnen und am Ende kurz stillhalten – daraus wird eine saubere **Gerade** (rastet waagerecht/senkrecht ein, ideal für Bruchstriche), ein **Kreis**, eine **Ellipse**, ein **Rechteck/Quadrat**, ein **Dreieck** oder ein **Pfeil**. **Strg+Z** holt den Strich zurück.
@@ -73,6 +74,12 @@
 
 <p align="center">
   <img src="assets/screenshots/sitznotes-handschrift.png" alt="SitzNotes: Vorlesungsskript mit Handschrift, Textmarker und Formen (Beta)" width="900">
+</p>
+
+<p align="center">
+  <img src="assets/screenshots/sitznotes-ipad-tabs.png" alt="SitzNotes auf dem iPad: zwei Skripte als Tabs, Formeln, Formen und Textmarker" width="440">
+  &nbsp;
+  <img src="assets/screenshots/sitznotes-ipad-zoom.png" alt="SitzNotes auf dem iPad: mit zwei Fingern gezoomt – scharf bei 167 %" width="440">
 </p>
 
 <p align="center">
@@ -126,7 +133,7 @@ Mit `SHA256SUMS.txt` kannst du prüfen, ob der Download unverändert ist.
 
 ### iPad (Beta, noch nicht im App Store)
 
-Die iPad-App (ab 0.6.0) hat dieselbe Oberfläche und dieselben Daten wie am PC/Mac – mit **Apple Pencil** (Druck, Neigung, Doppeltipp, Schweben, Handballen-Schutz, sehr geringe Verzögerung), Zoomen mit zwei Fingern, **Rückgängig/Wiederholen mit zwei bzw. drei Fingern tippen**, Touch-Bedienung, Split View/Slide Over, Hardware-Tastatur, Mitteilungen für Erinnerungen, **Live-Diktat** mit der Spracherkennung von Apple auf dem iPad und Sync über die Dateien-App (iCloud Drive, NAS). Eine direkte OneDrive-Anbindung (Anmeldung mit dem Microsoft-Konto) ist vorbereitet und wird in einer späteren Version freigeschaltet. Projektarbeiten lassen sich auf dem iPad bearbeiten; kompiliert wird am PC/Mac.
+Die iPad-App (ab 0.6.0) hat dieselbe Oberfläche und dieselben Daten wie am PC/Mac – mit **Apple Pencil** (Druck, Neigung, Doppeltipp, Schweben, „Nur Stift zeichnet“), Zoomen mit zwei Fingern (die Ansicht bleibt beim Loslassen, wo sie ist), **mehreren Skripten als Tabs**, **Rückgängig/Wiederholen mit zwei bzw. drei Fingern tippen**, Touch-Bedienung, Split View/Slide Over, Hardware-Tastatur, Mitteilungen für Erinnerungen, **Live-Diktat** mit der Spracherkennung von Apple auf dem iPad und Sync über die Dateien-App – **empfohlen: iCloud Drive** (funktioniert mit Windows, Mac und iPad), NAS-Freigaben ab 0.6.2. Eine direkte OneDrive-Anbindung (Anmeldung mit dem Microsoft-Konto) ist vorbereitet und wird in einer späteren Version freigeschaltet. Projektarbeiten lassen sich auf dem iPad bearbeiten; kompiliert wird am PC/Mac.
 
 Sie ist derzeit eine **Beta zum eigenen Testen** und **noch nicht im App Store** erhältlich (auch nicht über TestFlight). Sobald sie verfügbar ist, steht es hier.
 
@@ -173,6 +180,7 @@ und die Sicherungen darin gelöscht.
 | **Strg + Mausrad** (Windows) · **⌘ + Mausrad** / Trackpad-Pinch (macOS) · zwei Finger (iPad) | in Skripten zoomen – der Punkt unter Maus bzw. Fingern bleibt stehen |
 | **Zwei Finger tippen** / **drei Finger tippen** (iPad) | in Skripten: rückgängig / wiederholen |
 | **Strg+Z** / **Strg+Y** | in Skripten & Notizbüchern: rückgängig / wiederholen |
+| **Strg+W** / **Strg+Tab** / **Strg+Umschalt+Tab** (macOS: **⌘W**, **⌘⇧]** / **⌘⇧[**) | Skripte: Tab schließen / nächster / vorheriger Tab |
 | **P** / **M** / **E** / **L** / **T** / **K** / **H** | Skripte: Stift / Textmarker / Radierer / Lasso / Textfeld / Laserpointer / Hand |
 | **L** bzw. **T** noch einmal | Lasso Freihand ↔ Rechteck bzw. Textfeld ↔ Formel |
 | Zweiter Klick auf das aktive Werkzeug | Einstellungen des Werkzeugs (Stiftart, Farbe, Stärke …) |
@@ -180,7 +188,8 @@ und die Sicherungen darin gelöscht.
 | **Umschalt** beim Ziehen | gerade Linie bzw. Pfeil in 15°-Schritten |
 | **Strg+C** / **Strg+X** / **Strg+V** / **Strg+D** / **Entf** | Lasso-Auswahl kopieren / ausschneiden / einfügen / duplizieren / löschen |
 | **Rechtsklick** bzw. **langes Drücken** auf eine Seite | Menü: Kopieren, Ausschneiden, Duplizieren, Löschen, Einfügen |
-| Am Strichende **kurz stillhalten** | begradigen: Linie (waagerecht/senkrecht rastet ein), Kreis, Ellipse, Rechteck, Dreieck, Wurzelzeichen; Pfeil nur mit gezeichneter Spitze |
+| Am Strichende **kurz stillhalten** | begradigen: Linie (waagerecht/senkrecht rastet ein, auch lange Bruchstriche), Kreis, Ellipse, Rechteck, Dreieck, Wurzelzeichen; Pfeil nur mit gezeichneter Spitze. **Danach weiterziehen:** Linie verlängern/drehen, Formen vergrößern – solange der Stift aufliegt |
+| Auswahl mit **Finger oder Stift ziehen** · **Tipp daneben** | Auswahl (auch Eingefügtes) verschieben · Auswahl aufheben |
 | **Strg+Umschalt+D** (halten oder drücken) | in jedem Textfeld diktieren (in den Einstellungen änderbar), **Esc** bricht ab |
 | **Strg** beim Ziehen einer Aufgabe | Einsatzplanung: weiteren Mitarbeiter hinzufügen |
 | **← / →** | im Besprechungsmodus: Tag bzw. Woche blättern (**Esc** beendet) |
@@ -267,6 +276,8 @@ Kleinere Alternative: [BasicTeX](https://www.tug.org/mactex/morepackages.html) �
 
 SitzNotes gleicht mehrere Geräte über einen **Ordner** ab, den du schon hast. Es gibt kein Konto und keinen SitzNotes-Server – den Transport übernimmt dein Cloud-Dienst bzw. dein Netzwerk. Jedes Gerät behält alle Daten lokal und funktioniert auch offline.
 
+**Empfehlung für Windows, Mac und iPad: iCloud Drive** (Windows mit „iCloud für Windows“ aus dem Microsoft Store) – funktioniert auf allen drei Geräten.
+
 1. Einen **eigenen, leeren Unterordner** anlegen, z. B. `OneDrive\SitzNotes-Sync` oder `iCloud Drive/SitzNotes-Sync` oder eine Freigabe auf dem NAS.
    **OneDrive:** Rechtsklick auf den Ordner → **„Immer auf diesem Gerät beibehalten"**. **iCloud Drive:** im Finder „Immer behalten" bzw. „Laden".
 2. **Einstellungen → Synchronisation → „Sync einrichten …"** → Ordner wählen → Gerätenamen prüfen.
@@ -280,7 +291,7 @@ Danach gleicht SitzNotes automatisch ab: beim Start, alle paar Minuten, kurz nac
 - **Nicht synchronisiert** werden gerätespezifische Dinge: Tastenkürzel, Fensterpositionen, Sicherungen, ausgeblendete Bereiche, die LaTeX-Engine und „Externe Programme erlauben" einer Projektarbeit.
 - Sync ist **keine Sicherung**: Löschen wird ebenfalls übertragen. Die automatischen Sicherungen laufen weiter.
 - Sync ausschalten oder ein Gerät entfernen geht jederzeit – lokale Daten bleiben erhalten.
-- **iPad (Beta):** In SitzNotes › Einstellungen › Synchronisation › „Ordner in der Dateien-App" den Sync-Ordner antippen (iCloud Drive oder NAS-Freigabe). SitzNotes merkt sich den Ordner dauerhaft. Weil iPadOS keine Ordnerüberwachung im Hintergrund erlaubt, gleicht das iPad beim Öffnen und Zurückkehren in die App, alle paar Minuten, beim Verlassen und beim **Nach-unten-Ziehen** in der Liste ab. **OneDrive** lässt sich in der Dateien-App nicht als Ordner für andere Apps freigeben – die direkte OneDrive-Anbindung folgt.
+- **iPad (Beta):** In SitzNotes › Einstellungen › Synchronisation › „Ordner in der Dateien-App" den Sync-Ordner antippen (iCloud Drive oder NAS-Freigabe). SitzNotes merkt sich den Ordner dauerhaft. Weil iPadOS keine Ordnerüberwachung im Hintergrund erlaubt, gleicht das iPad beim Öffnen und Zurückkehren in die App, alle paar Minuten, beim Verlassen und beim **Nach-unten-Ziehen** in der Liste ab. **OneDrive** lässt sich in der Dateien-App nicht als Ordner für andere Apps freigeben – die direkte OneDrive-Anbindung folgt; bis dahin iCloud Drive nutzen. **NAS-Freigaben (SMB)** funktionieren ab 0.6.2 auch am Mac und iPad (in der Dateien-App als registrierter Benutzer verbinden, nicht als Gast). Begleitdateien von macOS/NAS („._…“, „.DS_Store“) stören nicht.
 - **Ausgabe-PDFs der Projektarbeiten (ab 0.6.0, Standard aus):** Einstellungen › Synchronisation › „Ausgabe-PDFs der Projektarbeiten mitsynchronisieren" – das zuletzt am PC/Mac erzeugte PDF liegt (verschlüsselt) im Sync-Ordner und lässt sich z. B. auf dem iPad ansehen.
 - **Verschiedene Versionen auf den Geräten (ab 0.5.2):** Ein Gerät mit älterer Version synchronisiert weiter, auch wenn ein anderes schon neuere Funktionen nutzt – neue Inhalte (z. B. Textfelder oder Bilder in Skripten) werden aufbewahrt und weitergegeben, nichts wird überschrieben. Anzeigen kann das ältere Gerät sie erst nach dem Update. In den Sync-Einstellungen siehst du, welches Gerät eine neuere oder ältere Version nutzt. Trotzdem empfohlen: **alle Geräte zeitnah aktualisieren.**
 - Ein Gerät mit **0.5.0** meldet bei Daten neuerer Versionen weiterhin **„Bitte SitzNotes aktualisieren"** und gleicht bis zum Update nichts ab – es überschreibt nichts, und seine Änderungen werden nach dem Update übertragen.
@@ -313,6 +324,7 @@ Danach gleicht SitzNotes automatisch ab: beim Start, alle paar Minuten, kurz nac
 - „Einfügen" im Rechtsklick-Menü nimmt Bilder aus anderen Apps nicht überall an – dafür **Strg+V** verwenden.
 - Ein Gerät mit 0.5.1 zeigt Textfelder, Formeln und eingefügte Bilder in Skripten erst nach dem Update auf 0.5.2 an (sie gehen dabei nicht verloren).
 - iPad-App: **Beta, noch nicht im App Store**; kein Kompilieren von LaTeX auf dem iPad; Abgleich nur, solange die App offen ist bzw. beim Öffnen/Verlassen. OneDrive-Ordner lassen sich in der Dateien-App nicht für andere Apps freigeben – „OneDrive (direkt)" ist vorbereitet und wird später freigeschaltet.
+- Schreiben am iPad: Der Strich folgt dem Stift noch nicht ganz so direkt wie in Apples eigenen Apps, Rauszoomen kann leicht ruckeln – eine native Zeichenfläche für das iPad ist in Arbeit.
 - Noch nicht enthalten: iPhone-optimierte Bedienung, Widget und „Teilen an SitzNotes" auf dem iPad, Mindmap/Canvas, Wireframes – diese kommen in späteren Versionen.
 
 ## Patchnotes
