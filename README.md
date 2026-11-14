@@ -28,6 +28,35 @@
 
 ---
 
+## Das Besondere an SitzNotes
+
+- ✍️ **Handschrift wie auf Papier – mit Apples PencilKit:** Am iPad schreibst, radierst und begradigst du so direkt wie in Apple Notizen, mit Druck und Neigung. Gespeichert wird in einem offenen Vektorformat, das am Mac und PC genauso aussieht und sich als PDF exportieren lässt.
+- ⚡ **Symbolpalette nach Norm:** Schaltzeichen der Elektrotechnik nach **DIN EN 60617**, Symbole der Technischen Mechanik (Lager, Einspannung, Kräfte, Lasten, Feder, Dämpfer …) und Mathematik.
+  - Eingefügt werden sie am 5-mm-Raster in deiner Stiftfarbe, als saubere Vektorformen.
+  - Du kannst sie frei skalieren und drehen. Bei Schaltzeichen werden beim Ziehen an der Kante nur die Anschlussleitungen länger, das Bauteil bleibt unverzerrt.
+- 📈 **Koordinatensysteme, die mitdenken:**
+  - Achsen kästchenweise verlängern, Skalenstriche bleiben auf dem Raster.
+  - Mehrere Funktionen in eigenen Farben, Legende mit Formel.
+  - **Funktionen einstellen** (Amplitude, Periode, Verschiebung …) per Regler oder Anfasser – die Kurve folgt live.
+- 🎓 **LaTeX-Projektarbeiten** mit PDF-Vorschau, verständlicher Fehleranzeige und Vorlage für wissenschaftliche Arbeiten.
+- 👷 **Einsatzplanung** für Teams: Mitarbeiter, Qualifikationen, Abwesenheiten, Warnungen und Besprechungsmodus.
+- 🔒 **Local-first:** Deine Daten bleiben auf deinen Geräten. Kein Konto, kein Server, keine Telemetrie. Abgleich zwischen PC, Mac und iPad über deinen eigenen Ordner (**iCloud Drive** oder **NAS**), optional Ende-zu-Ende-verschlüsselt.
+- 💳 **Einmalkauf statt Abo** (mit Version 1.0): einmal kaufen, dauerhaft nutzen – die Lizenz bleibt auch offline gültig. Bis dahin ist SitzNotes frei testbar.
+
+<p align="center">
+  <img src="assets/screenshots/sitznotes-ipad-elektro.png" alt="SitzNotes auf dem iPad: Stromkreis mit Schaltzeichen nach DIN EN 60617, Transistoren, Dioden und Kondensator" width="900">
+</p>
+
+<p align="center">
+  <img src="assets/screenshots/sitznotes-ipad-funktionen.png" alt="SitzNotes auf dem iPad: Koordinatensysteme mit Sinus, Kosinus, Parabel und Gerade in eigenen Farben, Legende mit Formeln" width="440">
+  &nbsp;
+  <img src="assets/screenshots/sitznotes-ipad-mechanik.png" alt="SitzNotes auf dem iPad: Balken auf Fest- und Loslager mit Streckenlast und Einzelkraft, Einspannung, Feder, Dämpfer, Masse" width="440">
+</p>
+
+<p align="center">
+  <img src="assets/screenshots/sitznotes-ipad-uebersicht.png" alt="SitzNotes auf dem iPad: Skripte und Notizbücher als Kacheln mit Vorschaubild" width="900">
+</p>
+
 ## Was SitzNotes kann
 
 - **Quick Capture von überall:** Ein Tastenkürzel öffnet ein kleines Eingabefenster über allen Programmen – tippen, Enter, fertig. Der Gedanke landet in der **Inbox**.
@@ -40,6 +69,14 @@
 - **Kalender & Erinnerungen:** Fälligkeit, Erinnerungen und Wiedervorlage an jeder Karte, Kalender (Monat/Woche/Agenda) mit Drag & Drop, **„Heute & überfällig"** in der Seitenleiste, Erinnerungen mit „Öffnen", „Erledigt" und „Später" – auch wenn das Fenster geschlossen ist. Export als **.ics** für Outlook, Apple oder Google Kalender.
 - **Quick Capture versteht Zeitangaben** wie „morgen 9 Uhr", „Freitag" oder „in 2 Wochen" und setzt die Fälligkeit.
 - **Skripte & Handschrift (Beta):** Vorlesungsskripte und Übungsblätter als **PDF importieren** oder **Notizbücher** mit leeren, linierten, karierten oder Punkt-Seiten anlegen – und mit **druckempfindlichem Stift**, **Textmarker**, **Radierer** (ganzer Strich oder nur ein Bereich), **Lineal/geraden Linien**, **Formen** und **Lasso** bearbeiten. **Seiten an jeder Stelle einfügen**, duplizieren, löschen und umsortieren – der Platz beim Rechnen geht nie aus. Zoom, Seitenübersicht, **Suche im PDF-Text**, **Export als PDF mit Handschrift** (das Original bleibt unverändert), Seite oder Ausschnitt als Bild in eine Notiz. Funktioniert mit Maus, Touch und Grafiktablett.
+  - **PencilKit am iPad (ab 0.7.0):** Schreiben, Radieren (ganze Striche oder Bereiche) und Begradigen wie in Apple Notizen, natives Zoomen mit Vorschaubild der ganzen Seite, **Durchkritzeln zum Löschen**, Seitenformate **A0–A5 und Letter** (hoch/quer).
+  - **Symbolpalette (Taste ∑, ab 0.7.0):** Elektrotechnik nach DIN EN 60617, Technische Mechanik und Mathematik – mit Suche und Favoriten. Das Einfügen erfolgt am 5-mm-Raster.
+  - **Koordinatensysteme mit Funktionen (ab 0.7.0):**
+    - Sinus, Kosinus, Tangens, Parabel, Gerade, e-Funktion, Logarithmus, Wurzel, Hyperbel, Betrag und Glockenkurve – mehrere in einem System, jede in eigener Farbe, optional mit Legende.
+    - Parameter über Regler, Zahlenfelder oder den Anfasser am Hochpunkt.
+    - Achsen einzeln in Kästchenschritten verlängern.
+  - **Alles Ausgewählte anpassen (ab 0.7.0):** Größe über Griffe an Ecken (proportional) und Kanten (eine Richtung), stufenlos drehen über den Drehgriff – für Handschrift, Formen, Symbole, Bilder und Textfelder.
+  - **Übersicht** als Kacheln mit Vorschaubild oder als Liste, sortierbar (alphabetisch, zuletzt verwendet, zuletzt geändert, erstellt).
   - **Mehrere Skripte gleichzeitig offen (ab 0.6.2):** Tableiste oben, jedes Skript behält Seite und Zoom, nach dem Neustart wieder da – ideal zum Kopieren aus dem Skript in die eigene Mitschrift.
   - **Ordner/Kurse:** z. B. „Mathe 1" mit Unterordnern, Farbe und Symbol, optional einem Space zugeordnet – Skripte und Notizbücher per Drag & Drop einsortieren.
   - **Kopieren, Ausschneiden, Einfügen, Duplizieren:** mit dem Lasso auswählen, dann über die Leiste an der Auswahl, per Rechtsklick (bzw. langes Drücken) oder mit **Strg+C / Strg+X / Strg+V / Strg+D** – auch auf andere Seiten und in andere Notizbücher.
@@ -133,7 +170,7 @@ Mit `SHA256SUMS.txt` kannst du prüfen, ob der Download unverändert ist.
 
 ### iPad (Beta, noch nicht im App Store)
 
-Die iPad-App (ab 0.6.0) hat dieselbe Oberfläche und dieselben Daten wie am PC/Mac – mit **Apple Pencil** (Druck, Neigung, Doppeltipp, Schweben, „Nur Stift zeichnet“), Zoomen mit zwei Fingern (die Ansicht bleibt beim Loslassen, wo sie ist), **mehreren Skripten als Tabs**, **Rückgängig/Wiederholen mit zwei bzw. drei Fingern tippen**, Touch-Bedienung, Split View/Slide Over, Hardware-Tastatur, Mitteilungen für Erinnerungen, **Live-Diktat** mit der Spracherkennung von Apple auf dem iPad und Sync über die Dateien-App – **empfohlen: iCloud Drive** (funktioniert mit Windows, Mac und iPad), NAS-Freigaben ab 0.6.2. Eine direkte OneDrive-Anbindung (Anmeldung mit dem Microsoft-Konto) ist vorbereitet und wird in einer späteren Version freigeschaltet. Projektarbeiten lassen sich auf dem iPad bearbeiten; kompiliert wird am PC/Mac.
+Die iPad-App (ab 0.6.0) hat dieselbe Oberfläche und dieselben Daten wie am PC/Mac – mit **Apple Pencil und PencilKit** (Druck, Neigung, Doppeltipp, Schweben, „Nur Stift zeichnet“), Zoomen mit zwei Fingern, **mehreren Skripten als Tabs**, Rückgängig/Wiederholen über die Knöpfe ↶ ↷, Touch-Bedienung, Split View/Slide Over, Hardware-Tastatur, Mitteilungen für Erinnerungen, **Live-Diktat** mit der Spracherkennung von Apple auf dem iPad und Sync über die Dateien-App – **empfohlen: iCloud Drive** (funktioniert mit Windows, Mac und iPad), NAS-Freigaben ab 0.6.2. Eine direkte OneDrive-Anbindung (Anmeldung mit dem Microsoft-Konto) ist vorbereitet und wird in einer späteren Version freigeschaltet. Projektarbeiten lassen sich auf dem iPad bearbeiten; kompiliert wird am PC/Mac.
 
 Sie ist derzeit eine **Beta zum eigenen Testen** und **noch nicht im App Store** erhältlich (auch nicht über TestFlight). Sobald sie verfügbar ist, steht es hier.
 
@@ -324,7 +361,8 @@ Danach gleicht SitzNotes automatisch ab: beim Start, alle paar Minuten, kurz nac
 - „Einfügen" im Rechtsklick-Menü nimmt Bilder aus anderen Apps nicht überall an – dafür **Strg+V** verwenden.
 - Ein Gerät mit 0.5.1 zeigt Textfelder, Formeln und eingefügte Bilder in Skripten erst nach dem Update auf 0.5.2 an (sie gehen dabei nicht verloren).
 - iPad-App: **Beta, noch nicht im App Store**; kein Kompilieren von LaTeX auf dem iPad; Abgleich nur, solange die App offen ist bzw. beim Öffnen/Verlassen. OneDrive-Ordner lassen sich in der Dateien-App nicht für andere Apps freigeben – „OneDrive (direkt)" ist vorbereitet und wird später freigeschaltet.
-- Schreiben am iPad: Der Strich folgt dem Stift noch nicht ganz so direkt wie in Apples eigenen Apps, Rauszoomen kann leicht ruckeln – eine native Zeichenfläche für das iPad ist in Arbeit.
+- iPad: Rückgängig/Wiederholen per Zwei-/Drei-Finger-Tipp ist in 0.7.0 abgeschaltet (damit der Handballen nie etwas auslöst) – bitte die Knöpfe ↶ ↷ nutzen.
+- Koordinatensysteme bleiben „intelligent", solange sie nicht frei gedreht oder verzerrt werden; Bilder und Textfelder wandern beim Drehen mit, drehen sich aber noch nicht selbst.
 - Noch nicht enthalten: iPhone-optimierte Bedienung, Widget und „Teilen an SitzNotes" auf dem iPad, Mindmap/Canvas, Wireframes – diese kommen in späteren Versionen.
 
 ## Patchnotes
