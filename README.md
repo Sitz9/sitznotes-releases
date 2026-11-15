@@ -69,12 +69,18 @@
 - **Kalender & Erinnerungen:** Fälligkeit, Erinnerungen und Wiedervorlage an jeder Karte, Kalender (Monat/Woche/Agenda) mit Drag & Drop, **„Heute & überfällig"** in der Seitenleiste, Erinnerungen mit „Öffnen", „Erledigt" und „Später" – auch wenn das Fenster geschlossen ist. Export als **.ics** für Outlook, Apple oder Google Kalender.
 - **Quick Capture versteht Zeitangaben** wie „morgen 9 Uhr", „Freitag" oder „in 2 Wochen" und setzt die Fälligkeit.
 - **Skripte & Handschrift (Beta):** Vorlesungsskripte und Übungsblätter als **PDF importieren** oder **Notizbücher** mit leeren, linierten, karierten oder Punkt-Seiten anlegen – und mit **druckempfindlichem Stift**, **Textmarker**, **Radierer** (ganzer Strich oder nur ein Bereich), **Lineal/geraden Linien**, **Formen** und **Lasso** bearbeiten. **Seiten an jeder Stelle einfügen**, duplizieren, löschen und umsortieren – der Platz beim Rechnen geht nie aus. Zoom, Seitenübersicht, **Suche im PDF-Text**, **Export als PDF mit Handschrift** (das Original bleibt unverändert), Seite oder Ausschnitt als Bild in eine Notiz. Funktioniert mit Maus, Touch und Grafiktablett.
-  - **PencilKit am iPad (ab 0.7.0):** Schreiben, Radieren (ganze Striche oder Bereiche) und Begradigen wie in Apple Notizen, natives Zoomen mit Vorschaubild der ganzen Seite, **Durchkritzeln zum Löschen**, Seitenformate **A0–A5 und Letter** (hoch/quer).
+  - **PencilKit am iPad (ab 0.7.0):** Schreiben, Radieren (ganze Striche oder Bereiche – Schrift und begradigte Linien in einem Zug) und Begradigen wie in Apple Notizen; die Handschrift sieht am Mac und PC genauso fein aus wie am iPad (ab 0.7.5), natives Zoomen mit Vorschaubild der ganzen Seite, **Durchkritzeln zum Löschen**, Seitenformate **A0–A5 und Letter** (hoch/quer).
   - **Symbolpalette (Taste ∑, ab 0.7.0):** Elektrotechnik nach DIN EN 60617, Technische Mechanik und Mathematik – mit Suche und Favoriten. Das Einfügen erfolgt am 5-mm-Raster.
   - **Koordinatensysteme mit Funktionen (ab 0.7.0):**
     - Sinus, Kosinus, Tangens, Parabel, Gerade, e-Funktion, Logarithmus, Wurzel, Hyperbel, Betrag und Glockenkurve – mehrere in einem System, jede in eigener Farbe, optional mit Legende.
     - Parameter über Regler, Zahlenfelder oder den Anfasser am Hochpunkt.
     - Achsen einzeln in Kästchenschritten verlängern.
+    - **x-Achse in π-Einheiten** (π/2, π, 3π/2, 2π) für Winkelfunktionen; die Legende steht außerhalb des Diagramms (ab 0.7.5).
+  - **Tabellen (Taste ▦, ab 0.7.5):**
+    - Größe beim Einfügen wählen, Zeilen und Spalten hinzufügen oder löschen – auch mitten in der Tabelle.
+    - Spaltenbreite und Zeilenhöhe durch Ziehen an den Linien.
+    - Text per Tastatur in die Zellen (Tab springt weiter); am iPad mit dem Stift darüber schreiben.
+    - Verschieben, skalieren, kopieren wie andere Objekte; im PDF-Export enthalten.
   - **Alles Ausgewählte anpassen (ab 0.7.0):** Größe über Griffe an Ecken (proportional) und Kanten (eine Richtung), stufenlos drehen über den Drehgriff – für Handschrift, Formen, Symbole, Bilder und Textfelder.
   - **Übersicht** als Kacheln mit Vorschaubild oder als Liste, sortierbar (alphabetisch, zuletzt verwendet, zuletzt geändert, erstellt).
   - **Mehrere Skripte gleichzeitig offen (ab 0.6.2):** Tableiste oben, jedes Skript behält Seite und Zoom, nach dem Neustart wieder da – ideal zum Kopieren aus dem Skript in die eigene Mitschrift.
@@ -89,8 +95,8 @@
 - **Skizze in jeder Notiz:** Baustein „Skizze" in der Einfügen-Leiste (oder `/skizze`) – kurz zeichnen, als Bild einfügen.
 - **Direkt diktieren:** In jedem Textfeld (Notiz, Quick Capture, Einsatzplanung, LaTeX-Editor) auf 🎙️ klicken oder **Strg+Umschalt+D** drücken – sprechen – und der Text steht an der Cursor-Stelle, mit Satzzeichen und Großschreibung. Kürzel **gedrückt halten** = sprechen, loslassen = einfügen; **Esc** bricht ab. Optional **Dauer-Diktat**. Läuft **lokal** auf deinem Gerät, ohne Cloud; beim Diktat wird kein Audio gespeichert.
 - **Sprachnotizen:** Aufnahme direkt in einer Karte (Einfügen-Leiste „Sprache" oder `/sprache`) und im Quick Capture (🎙️), mit Player. Auf Wunsch **lokal in Text umgewandelt** – auf deinem Gerät, ohne Cloud.
-- **Fixes 🐞:** eigene Spalte im Board direkt nach der Inbox; Schalter **„Nur Fixes"** zeigt nur Fehler und Korrekturen.
-- **Liste und Board** (Kanban nach Status mit Drag & Drop), **Spalten auf- und zuklappbar, ausblendbar und umsortierbar**, **eigene Spalten** mit Name, Farbe und Symbol (Rechtsklick auf den Spaltenkopf), Schalter **„Erledigte ausblenden"**.
+- **Fixes 🐞:** eigene Spalte im Board direkt nach der Inbox; über den Status-Filter siehst du nur Fehler und Korrekturen.
+- **Liste und Board** (Kanban nach Status mit Drag & Drop), **Spalten auf- und zuklappbar, ausblendbar und umsortierbar**, **eigene Spalten** mit Name, Farbe und Symbol (Rechtsklick auf den Spaltenkopf); auch eingebaute Status lassen sich umbenennen, löschen und wiederherstellen (ab 0.7.5). Schiebeschalter **„Erledigte ausblenden"**.
 - **Spaces archivieren:** Abgeschlossenes verschwindet aus dem Alltag, bleibt im **Archiv** lesbar und lässt sich jederzeit wiederherstellen.
 - **Einsatzplanung (Beta)** für Teams: Mitarbeiter mit Rolle, Qualifikationen und Abwesenheiten – **nach Rolle gruppiert** und alphabetisch, Reihenfolge der Rollen einstellbar; viele gleichartige Mitarbeiter **schnell anlegen** („Speichern & nächster" übernimmt Rolle und Qualifikationen); Aufgaben per Drag & Drop einplanen (Tag oder Woche, Schichten), auch **mit mehreren Mitarbeitern** (mit Strg ziehen = weiteren hinzufügen), **Warnungen** bei Überlastung, Abwesenheit oder fehlender Qualifikation; Zuweisungs- und Aufgabenliste als **PDF/Druck (A4 quer)** oder **CSV**; **Besprechungsmodus** im Vollbild für den Monitor in der Morgenrunde. Umschalter **„Notizen/Projekte ↔ Einsatzplanung"** oben in der Seitenleiste.
 - **Projektarbeiten (Beta):** wissenschaftliche Arbeiten, Bachelorarbeiten und andere Dokumente in **LaTeX** schreiben – mit **PDF-Vorschau** daneben, die sich nach dem Tippen selbst erneuert, verständlicher **Fehleranzeige** (Klick springt zur Zeile), Vorlage **„Wissenschaftliche Arbeit (deutsch)"** (Titelseite, Verzeichnisse, Literatur, deutsche Silbentrennung), deinen Notizen zum Einfügen und Export als PDF oder ZIP. Bestehende LaTeX-Projekte lassen sich als Kopie importieren.
@@ -240,10 +246,12 @@ Auf dem Mac jeweils **⌘** statt **Strg**.
 
 - **Erst festhalten, später sortieren.** Mit dem Quick-Capture-Kürzel schreibst du den Gedanken in Sekunden auf, ohne das aktuelle Programm zu verlassen. Die erste Zeile wird zum Titel, der Rest zum Inhalt.
 - **Schreiben mit Apple Pencil (iPad):** „Nur Stift zeichnet" ist von Anfang an an – die Hand darf aufliegen, mit dem Finger scrollst und zoomst du. Doppeltipp auf den Pencil wechselt zum Radierer und zurück; hältst du den Stift knapp über das Display, zeigt ein Kreis die Spitze bzw. die Radierergröße.
+- **Deine Farbe:** Unter **Einstellungen → Darstellung** wählst du die Akzentfarbe der App. Mit den **Seitentasten der Maus** (Zurück/Vor) wechselst du zwischen den zuletzt geöffneten Ansichten.
+- **Tabellen in der Mitschrift:** Tabelle mit ▦ einfügen, mit dem Lasso auswählen und über die Marken oben/links eine Spalte oder Zeile wählen – dann davor oder dahinter einfügen. Für Text doppelt in eine Zelle klicken oder das Text-Werkzeug nehmen.
 - **Inbox-Routine:** Einmal am Tag die Inbox öffnen und mit der Tastatur durchgehen – **S** für den Space, **T** für Tags, **1–9** für den Status, **Enter** übernimmt den Vorschlag. Ziel: Inbox leer.
 - **Alles in einen Gedanken:** Notiz schreiben, mit **/checkliste** Aufgaben dazu, ein Bildschirmfoto mit **Strg+V** direkt an die Stelle, eine Formel mit **/formel** – in der Vorschau hakst du Aufgaben direkt ab.
 - **Spaces für Projekte, Tags für Querschnittsthemen.** Ein Space ist z. B. „Homelab" oder „Musik", ein Tag z. B. `#idee-für-später` oder `#kaufen` – Tags schreibst du einfach mit `#` in den Text.
-- **Fehler gehören zu den Fixes.** Beginnt eine Quick-Capture-Notiz mit `fix:`, landet sie in der Spalte „🐞 Fixes". Mit **„Nur Fixes"** in der Kopfzeile siehst du alle offenen Fehler, zusammen mit dem Space-Filter nur die eines Projekts.
+- **Fehler gehören zu den Fixes.** Beginnt eine Quick-Capture-Notiz mit `fix:`, landet sie in der Spalte „🐞 Fixes". Über den **Status-Filter** siehst du alle offenen Fehler, zusammen mit dem Space-Filter nur die eines Projekts.
 - **Board für den Überblick:** Karten per Drag & Drop in die nächste Spalte ziehen; Spalten, die du gerade nicht brauchst, per Klick auf den Spaltenkopf zuklappen; „Erledigte ausblenden" hält das Board übersichtlich.
 - **Projektarbeit neben den Notizen:** Ordne die Projektarbeit dem Space mit deinen Recherche-Notizen zu – unter „Notizen" stehen sie neben dem Editor und lassen sich per Klick als LaTeX einfügen. Bilder einfach in die Dateiliste oder den Editor ziehen.
 - **Verknüpfen statt kopieren:** Gehört eine Idee zu einer anderen, verknüpfe sie – in beiden Karten ist die Verbindung sichtbar.
@@ -362,6 +370,10 @@ Danach gleicht SitzNotes automatisch ab: beim Start, alle paar Minuten, kurz nac
 - Ein Gerät mit 0.5.1 zeigt Textfelder, Formeln und eingefügte Bilder in Skripten erst nach dem Update auf 0.5.2 an (sie gehen dabei nicht verloren).
 - iPad-App: **Beta, noch nicht im App Store**; kein Kompilieren von LaTeX auf dem iPad; Abgleich nur, solange die App offen ist bzw. beim Öffnen/Verlassen. OneDrive-Ordner lassen sich in der Dateien-App nicht für andere Apps freigeben – „OneDrive (direkt)" ist vorbereitet und wird später freigeschaltet.
 - iPad: Rückgängig/Wiederholen per Zwei-/Drei-Finger-Tipp ist in 0.7.0 abgeschaltet (damit der Handballen nie etwas auslöst) – bitte die Knöpfe ↶ ↷ nutzen.
+- Tabellen kennen noch keine verbundenen Zellen, Hintergrundfarben oder Formatierung je Zelle. Der Radierer entfernt Handschrift über einer Tabelle, nicht die Tabelle selbst (dafür auswählen und löschen).
+- Ein Gerät mit 0.7.0 oder älter zeigt Tabellen erst nach dem Update an; beim Sync gehen sie nicht verloren.
+- iPad: Beim Zoomen an der 500-%-Grenze und bei starkem Herauszoomen kann das Bild beim Loslassen noch leicht versetzen.
+- Striche, die in 0.7.0 mit dem Bereichsradierer teilweise entfernt wurden, können beim Öffnen einer alten Seite einmalig wieder sichtbar werden – sie lassen sich dann normal radieren.
 - Koordinatensysteme bleiben „intelligent", solange sie nicht frei gedreht oder verzerrt werden; Bilder und Textfelder wandern beim Drehen mit, drehen sich aber noch nicht selbst.
 - Noch nicht enthalten: iPhone-optimierte Bedienung, Widget und „Teilen an SitzNotes" auf dem iPad, Mindmap/Canvas, Wireframes – diese kommen in späteren Versionen.
 
