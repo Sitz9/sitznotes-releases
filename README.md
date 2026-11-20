@@ -34,12 +34,15 @@
 - ⚡ **Symbolpalette nach Norm:** Schaltzeichen der Elektrotechnik nach **DIN EN 60617**, Symbole der Technischen Mechanik (Lager, Einspannung, Kräfte, Lasten, Feder, Dämpfer …) und Mathematik.
   - Eingefügt werden sie am 5-mm-Raster in deiner Stiftfarbe, als saubere Vektorformen.
   - Du kannst sie frei skalieren und drehen. Bei Schaltzeichen werden beim Ziehen an der Kante nur die Anschlussleitungen länger, das Bauteil bleibt unverzerrt.
+  - **Schaltpläne zeichnen (ab 0.8.0):** Leitungen rasten an den Anschlüssen der Schaltzeichen und ineinander ein – ein gelber Ring zeigt, wo.
 - 📈 **Koordinatensysteme, die mitdenken:**
   - Achsen kästchenweise verlängern, Skalenstriche bleiben auf dem Raster.
   - Mehrere Funktionen in eigenen Farben, Legende mit Formel.
   - **Funktionen einstellen** (Amplitude, Periode, Verschiebung …) per Regler oder Anfasser – die Kurve folgt live.
+  - **Flächen im 3D-Koordinatensystem (ab 0.8.0):** z = f(x, y) als Netz, Ansicht drehen und neigen.
+- 📐 **Zeichenwerkzeuge wie im Geodreieck-Mäppchen (ab 0.8.0):** Lineal mit Winkelmesser, Formen-Menü mit Flächen und Körpern (Würfel, Quader, Pyramide, Prisma, Kugel, Zylinder, Kegel).
 - 🎓 **LaTeX-Projektarbeiten** mit PDF-Vorschau, verständlicher Fehleranzeige und Vorlage für wissenschaftliche Arbeiten.
-- 👷 **Einsatzplanung** für Teams: Mitarbeiter, Qualifikationen, Abwesenheiten, Warnungen und Besprechungsmodus.
+- 👷 **Einsatzplanung** für Teams: Mitarbeiter, Qualifikationen, Abwesenheiten, Warnungen, Besprechungsmodus und Auswertung der letzten 12 Monate.
 - 🔒 **Local-first:** Deine Daten bleiben auf deinen Geräten. Kein Konto, kein Server, keine Telemetrie. Abgleich zwischen PC, Mac und iPad über deinen eigenen Ordner (**iCloud Drive** oder **NAS**), optional Ende-zu-Ende-verschlüsselt.
 - 💳 **Einmalkauf statt Abo** (mit Version 1.0): einmal kaufen, dauerhaft nutzen – die Lizenz bleibt auch offline gültig. Bis dahin ist SitzNotes frei testbar.
 
@@ -81,6 +84,14 @@
     - Spaltenbreite und Zeilenhöhe durch Ziehen an den Linien.
     - Text per Tastatur in die Zellen (Tab springt weiter); am iPad mit dem Stift darüber schreiben.
     - Verschieben, skalieren, kopieren wie andere Objekte; im PDF-Export enthalten.
+    - Zelle mit der Tastatur füllen: Finger-Doppeltipp, „✎ Zelle", Eingabe, F2 oder einfach losschreiben (ab 0.8.0).
+  - **Formen-Menü (Taste ⬠, ab 0.8.0):** Rechteck, Quadrat, Dreieck, Kreis, Ellipse, Trapez, Parallelogramm, Raute, Fünf- und Sechseck; Körper: Würfel, Quader, Pyramide, Prisma, Kugel, Zylinder, Kegel.
+  - **Lineal mit Winkelmesser (Taste 📐, ab 0.8.0):**
+    - Mit dem Finger verschieben, an den runden Knöpfen drehen (rastet auf 15°), Winkel ablesen.
+    - Stift auf dem Lineal oder dicht an einer Kante ansetzen: Die Linie läuft exakt an der Kante.
+  - **Schaltpläne (ab 0.8.0):** Linie von Anschluss zu Anschluss ziehen und kurz halten – sie rastet an den Anschlüssen und an anderen Leitungen ein (Fang 5 mm).
+  - **Flächen im 3D-Koordinatensystem (ab 0.8.0):** „+ Fläche z = f(x, y)" – Paraboloid, Sattel, Ebene, Welle, Glocke, Kegel; Ansicht drehen und neigen.
+  - **Symbole sind ein Objekt (ab 0.8.0):** Antippen wählt das ganze Symbol oder Koordinatensystem; Strichstärke nachträglich änderbar (╌ / ━ an der Auswahl). Formen lassen sich antippen und verschieben.
   - **Alles Ausgewählte anpassen (ab 0.7.0):** Größe über Griffe an Ecken (proportional) und Kanten (eine Richtung), stufenlos drehen über den Drehgriff – für Handschrift, Formen, Symbole, Bilder und Textfelder.
   - **Übersicht** als Kacheln mit Vorschaubild oder als Liste, sortierbar (alphabetisch, zuletzt verwendet, zuletzt geändert, erstellt).
   - **Mehrere Skripte gleichzeitig offen (ab 0.6.2):** Tableiste oben, jedes Skript behält Seite und Zoom, nach dem Neustart wieder da – ideal zum Kopieren aus dem Skript in die eigene Mitschrift.
@@ -96,9 +107,10 @@
 - **Direkt diktieren:** In jedem Textfeld (Notiz, Quick Capture, Einsatzplanung, LaTeX-Editor) auf 🎙️ klicken oder **Strg+Umschalt+D** drücken – sprechen – und der Text steht an der Cursor-Stelle, mit Satzzeichen und Großschreibung. Kürzel **gedrückt halten** = sprechen, loslassen = einfügen; **Esc** bricht ab. Optional **Dauer-Diktat**. Läuft **lokal** auf deinem Gerät, ohne Cloud; beim Diktat wird kein Audio gespeichert.
 - **Sprachnotizen:** Aufnahme direkt in einer Karte (Einfügen-Leiste „Sprache" oder `/sprache`) und im Quick Capture (🎙️), mit Player. Auf Wunsch **lokal in Text umgewandelt** – auf deinem Gerät, ohne Cloud.
 - **Fixes 🐞:** eigene Spalte im Board direkt nach der Inbox; über den Status-Filter siehst du nur Fehler und Korrekturen.
-- **Liste und Board** (Kanban nach Status mit Drag & Drop), **Spalten auf- und zuklappbar, ausblendbar und umsortierbar**, **eigene Spalten** mit Name, Farbe und Symbol (Rechtsklick auf den Spaltenkopf); auch eingebaute Status lassen sich umbenennen, löschen und wiederherstellen (ab 0.7.5). Schiebeschalter **„Erledigte ausblenden"**.
+- **Liste und Board** (Kanban nach Status mit Drag & Drop), **Spalten auf- und zuklappbar, ausblendbar und umsortierbar**, **eigene Spalten** mit Name, Farbe und Symbol (Rechtsklick auf den Spaltenkopf); auch eingebaute Status lassen sich umbenennen, löschen und wiederherstellen (ab 0.7.5). Schiebeschalter **„Erledigte ausblenden"**. **Ab 0.8.0:** Bereiche in eigene Reihen untereinander legen, jede eigene Farbe, Zahl der Vorschauzeilen einstellbar, mehrere Notizen gleichzeitig auswählen und löschen, Seitenleiste der Notiz in der Breite verstellbar.
 - **Spaces archivieren:** Abgeschlossenes verschwindet aus dem Alltag, bleibt im **Archiv** lesbar und lässt sich jederzeit wiederherstellen.
 - **Einsatzplanung (Beta)** für Teams: Mitarbeiter mit Rolle, Qualifikationen und Abwesenheiten – **nach Rolle gruppiert** und alphabetisch, Reihenfolge der Rollen einstellbar; viele gleichartige Mitarbeiter **schnell anlegen** („Speichern & nächster" übernimmt Rolle und Qualifikationen); Aufgaben per Drag & Drop einplanen (Tag oder Woche, Schichten), auch **mit mehreren Mitarbeitern** (mit Strg ziehen = weiteren hinzufügen), **Warnungen** bei Überlastung, Abwesenheit oder fehlender Qualifikation; Zuweisungs- und Aufgabenliste als **PDF/Druck (A4 quer)** oder **CSV**; **Besprechungsmodus** im Vollbild für den Monitor in der Morgenrunde. Umschalter **„Notizen/Projekte ↔ Einsatzplanung"** oben in der Seitenleiste.
+  - **Ab 0.8.0:** Qualifikationen zentral verwalten und per Mehrfachauswahl zuweisen; **Auswertung der letzten 12 Monate** (erledigte und eingeplante Aufgaben, Stunden, Abwesenheiten) als Druck/PDF oder CSV; „Daten endgültig löschen" für Mitarbeiter.
 - **Projektarbeiten (Beta):** wissenschaftliche Arbeiten, Bachelorarbeiten und andere Dokumente in **LaTeX** schreiben – mit **PDF-Vorschau** daneben, die sich nach dem Tippen selbst erneuert, verständlicher **Fehleranzeige** (Klick springt zur Zeile), Vorlage **„Wissenschaftliche Arbeit (deutsch)"** (Titelseite, Verzeichnisse, Literatur, deutsche Silbentrennung), deinen Notizen zum Einfügen und Export als PDF oder ZIP. Bestehende LaTeX-Projekte lassen sich als Kopie importieren.
 - **Volltextsuche** (auch Wortanfänge, Umlaute egal), Filter nach Status/Space/Tag, **Schnellsuche mit Strg+K**.
 - **Bilder** per Drag & Drop oder Einfügen (z. B. Bildschirmausschnitt).
@@ -107,9 +119,9 @@
 - **Bereiche ausblenden:** Was du nicht brauchst (Projektarbeiten, Kalender, Archiv, Einsatzplanung), blendest du in den Einstellungen aus.
 - **Automatische Sicherung** täglich (die letzten 10 Stände) und **vor jedem Update**.
 - **Updates direkt in SitzNotes:** Hinweis mit den Neuerungen, „Jetzt installieren" oder „Später" – nie ungefragt.
-- **Papierkorb** mit „Endgültig löschen" und „Papierkorb leeren" (mit Sicherheitsabfrage), auf Wunsch automatisch nach einer gewählten Zahl von Tagen.
+- **Papierkorb für alles (ab 0.8.0):** Notizen, Skripte, Notizbücher, Ordner, Spaces und Projektarbeiten – mit „Wiederherstellen", „Endgültig löschen" und „Papierkorb leeren" (mit Sicherheitsabfrage), auf Wunsch automatisch nach einer gewählten Zahl von Tagen.
 - **Passt sich deinem Monitor an:** von Laptop bis 4K, mit jeder Windows-Skalierung und auf Retina-Displays. Die Seitenleiste lässt sich auf eine schmale Leiste mit dem Logo einklappen (**Strg+B**).
-- Dunkles Design, alle Links öffnen im Standard-Browser.
+- **Hell- und Dunkelmodus (ab 0.8.0):** System, Hell oder Dunkel unter Einstellungen → Darstellung. Alle Links öffnen im Standard-Browser.
 
 <p align="center">
   <img src="assets/screenshots/sitznotes-board.png" alt="SitzNotes: Board nach Status mit Fixes-Spalte" width="900">
@@ -215,10 +227,12 @@ und die Sicherungen darin gelöscht.
 | **1 – 9** | Status setzen (Inbox, Fixes, Idee … Verworfen) |
 | **Enter** | Vorschlag „gehört wahrscheinlich zu …" annehmen |
 | **Entf** | in den Papierkorb |
+| **Strg + Klick** · am Tablet **lange halten** | mehrere Notizen auswählen (**Entf** löscht die Auswahl, **Esc** beendet sie) |
 | **Strg+Enter** oder **Esc** | beim Bearbeiten: **Fertig** |
 | **/** | beim Bearbeiten: Baustein einfügen (Checkliste, Formel, Bild …) |
 | **Strg+S** | in einer Projektarbeit: speichern und PDF sofort erzeugen |
 | **Rechtsklick** auf einen Spaltenkopf | Board: Spalte ausblenden, verschieben, Spalten anpassen |
+| **Eingabe** / **F2** / einfach tippen (Tabelle ausgewählt) | Skripte: Tabellenzelle bearbeiten |
 | **Strg+B** | Seitenleiste ein-/ausklappen |
 | **Strg + Mausrad** (Windows) · **⌘ + Mausrad** / Trackpad-Pinch (macOS) · zwei Finger (iPad) | in Skripten zoomen – der Punkt unter Maus bzw. Fingern bleibt stehen |
 | **Zwei Finger tippen** / **drei Finger tippen** (iPad) | in Skripten: rückgängig / wiederholen |
@@ -248,6 +262,9 @@ Auf dem Mac jeweils **⌘** statt **Strg**.
 - **Schreiben mit Apple Pencil (iPad):** „Nur Stift zeichnet" ist von Anfang an an – die Hand darf aufliegen, mit dem Finger scrollst und zoomst du. Doppeltipp auf den Pencil wechselt zum Radierer und zurück; hältst du den Stift knapp über das Display, zeigt ein Kreis die Spitze bzw. die Radierergröße.
 - **Deine Farbe:** Unter **Einstellungen → Darstellung** wählst du die Akzentfarbe der App. Mit den **Seitentasten der Maus** (Zurück/Vor) wechselst du zwischen den zuletzt geöffneten Ansichten.
 - **Tabellen in der Mitschrift:** Tabelle mit ▦ einfügen, mit dem Lasso auswählen und über die Marken oben/links eine Spalte oder Zeile wählen – dann davor oder dahinter einfügen. Für Text doppelt in eine Zelle klicken oder das Text-Werkzeug nehmen.
+- **Gerade Linien mit dem Lineal:** 📐 einschalten, Lineal mit dem Finger hinlegen und drehen, dann mit dem Stift an der Kante entlangziehen. Der Winkel steht in der Mitte.
+- **Schaltplan in zwei Minuten:** Schaltzeichen über ∑ › Elektrotechnik einfügen, dann Leitungen von Anschluss zu Anschluss ziehen und am Ende kurz halten – der gelbe Ring zeigt, dass die Leitung sitzt.
+- **Hell für draußen, Dunkel für abends:** Einstellungen → Darstellung → System / Hell / Dunkel.
 - **Inbox-Routine:** Einmal am Tag die Inbox öffnen und mit der Tastatur durchgehen – **S** für den Space, **T** für Tags, **1–9** für den Status, **Enter** übernimmt den Vorschlag. Ziel: Inbox leer.
 - **Alles in einen Gedanken:** Notiz schreiben, mit **/checkliste** Aufgaben dazu, ein Bildschirmfoto mit **Strg+V** direkt an die Stelle, eine Formel mit **/formel** – in der Vorschau hakst du Aufgaben direkt ab.
 - **Spaces für Projekte, Tags für Querschnittsthemen.** Ein Space ist z. B. „Homelab" oder „Musik", ein Tag z. B. `#idee-für-später` oder `#kaufen` – Tags schreibst du einfach mit `#` in den Text.
@@ -275,8 +292,9 @@ Auf dem Mac jeweils **⌘** statt **Strg**.
 - **Fertige Projekte archivieren** statt löschen – das Archiv bleibt durchsuchbar („Archiv einbeziehen" neben der Suche).
 - **Morgenrunde im Team:** In der Einsatzplanung den **Besprechungsmodus** auf den großen Monitor bringen; Zuweisungsliste vorher als PDF für den Aushang speichern.
 - **Team schnell erfassen:** Erst alle Mitarbeiter einer Rolle hintereinander anlegen (Rolle und Qualifikationen einmal eintragen, dann nur noch Name + Enter), dann die nächste Rolle. Mit ↑/↓ legst du fest, welche Rolle oben steht.
+- **Rückblick fürs Team:** Einsatzplanung → Export → „Auswertung letzte 12 Monate". Krankheitstage sind nur enthalten, wenn du den Haken ausdrücklich setzt.
 - **Markdown-Export** (Einstellungen oder Space-Menü „⋯") für eine lesbare Kopie: ein Ordner je Space, Bilder im Unterordner `bilder`, Fixes im Unterordner `Fixes`.
-- **Papierkorb aufräumen:** Gelöschte Karten liegen im Papierkorb, bis du sie endgültig löschst („Papierkorb leeren"). Wer möchte, stellt in den Einstellungen „Automatisch leeren nach … Tagen" ein – standardmäßig ist das aus.
+- **Papierkorb aufräumen:** Gelöschtes (Notizen, Skripte, Ordner, Spaces, Projektarbeiten) liegt im Papierkorb, bis du es endgültig löschst („Papierkorb leeren"). Wer möchte, stellt in den Einstellungen „Automatisch leeren nach … Tagen" ein – standardmäßig ist das aus.
 
 ## Projektarbeiten (Beta) – LaTeX
 
@@ -352,6 +370,8 @@ Danach gleicht SitzNotes automatisch ab: beim Start, alle paar Minuten, kurz nac
 - **Live-Diktat am iPad:** Spracherkennung von Apple auf dem Gerät; kein Audio wird gespeichert oder an SitzNotes gesendet.
 - **iPad:** Daten im geschützten Speicher der App; automatische Sicherungen in der Dateien-App unter „Auf meinem iPad › SitzNotes › Sicherungen". Erinnerungen werden als lokale Mitteilungen auf dem iPad eingeplant – ohne Push-Server.
 - **Einsatzplanung:** Mitarbeiterdaten sind personenbezogene Daten. Die Nutzung im Unternehmen ist ggf. mit Datenschutzbeauftragten bzw. Betriebsrat abzustimmen. Beim Sync über Cloud-Dienste bitte die Ende-zu-Ende-Verschlüsselung verwenden.
+  - Die **Auswertung der letzten 12 Monate** entsteht nur lokal und ist als vertraulich gekennzeichnet. **Krankheitstage** sind Gesundheitsdaten und standardmäßig nicht enthalten.
+  - **„Daten endgültig löschen"** überschreibt Name, Rolle, Qualifikationen, Notiz und Abwesenheiten eines Mitarbeiters – über den Sync auf allen Geräten.
 - Links öffnen immer in deinem Standard-Browser, nie in der App.
 
 ## Bekannte Einschränkungen
@@ -373,6 +393,9 @@ Danach gleicht SitzNotes automatisch ab: beim Start, alle paar Minuten, kurz nac
 - Tabellen kennen noch keine verbundenen Zellen, Hintergrundfarben oder Formatierung je Zelle. Der Radierer entfernt Handschrift über einer Tabelle, nicht die Tabelle selbst (dafür auswählen und löschen).
 - Ein Gerät mit 0.7.0 oder älter zeigt Tabellen erst nach dem Update an; beim Sync gehen sie nicht verloren.
 - iPad: Beim Zoomen an der 500-%-Grenze und bei starkem Herauszoomen kann das Bild beim Loslassen noch leicht versetzen.
+- Lineal: Der Textmarker legt sich erst beim Absetzen an die Kante; drehen über die Knöpfe (noch nicht mit zwei Fingern). Am iPad zeichnet der Stift über dem Lineal – verschoben wird es mit dem Finger.
+- Eckige Klammern werden beim Begradigen noch nicht immer sauber erkannt.
+- Ein Gerät mit 0.7.5 zeigt Board-Reihen und die Qualifikations-Verwaltung erst nach dem Update an; beim Sync gehen sie nicht verloren.
 - Striche, die in 0.7.0 mit dem Bereichsradierer teilweise entfernt wurden, können beim Öffnen einer alten Seite einmalig wieder sichtbar werden – sie lassen sich dann normal radieren.
 - Koordinatensysteme bleiben „intelligent", solange sie nicht frei gedreht oder verzerrt werden; Bilder und Textfelder wandern beim Drehen mit, drehen sich aber noch nicht selbst.
 - Noch nicht enthalten: iPhone-optimierte Bedienung, Widget und „Teilen an SitzNotes" auf dem iPad, Mindmap/Canvas, Wireframes – diese kommen in späteren Versionen.
