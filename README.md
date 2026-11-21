@@ -73,6 +73,7 @@
 - **Quick Capture versteht Zeitangaben** wie „morgen 9 Uhr", „Freitag" oder „in 2 Wochen" und setzt die Fälligkeit.
 - **Skripte & Handschrift (Beta):** Vorlesungsskripte und Übungsblätter als **PDF importieren** oder **Notizbücher** mit leeren, linierten, karierten oder Punkt-Seiten anlegen – und mit **druckempfindlichem Stift**, **Textmarker**, **Radierer** (ganzer Strich oder nur ein Bereich), **Lineal/geraden Linien**, **Formen** und **Lasso** bearbeiten. **Seiten an jeder Stelle einfügen**, duplizieren, löschen und umsortieren – der Platz beim Rechnen geht nie aus. Zoom, Seitenübersicht, **Suche im PDF-Text**, **Export als PDF mit Handschrift** (das Original bleibt unverändert), Seite oder Ausschnitt als Bild in eine Notiz. Funktioniert mit Maus, Touch und Grafiktablett.
   - **PencilKit am iPad (ab 0.7.0):** Schreiben, Radieren (ganze Striche oder Bereiche – Schrift und begradigte Linien in einem Zug) und Begradigen wie in Apple Notizen; die Handschrift sieht am Mac und PC genauso fein aus wie am iPad (ab 0.7.5), natives Zoomen mit Vorschaubild der ganzen Seite, **Durchkritzeln zum Löschen**, Seitenformate **A0–A5 und Letter** (hoch/quer).
+  - **Lange Skripte am iPad (ab 0.8.1):** Auch in importierten PDFs mit mehreren hundert Seiten bleibt das Bild beim Zoomen und Scrollen ruhig. Direkt nach dem Schreiben scrollt ein Finger sofort – auch wenn die Schreibhand liegen bleibt; der Handballen scrollt und zoomt nie.
   - **Symbolpalette (Taste ∑, ab 0.7.0):** Elektrotechnik nach DIN EN 60617, Technische Mechanik und Mathematik – mit Suche und Favoriten. Das Einfügen erfolgt am 5-mm-Raster.
   - **Koordinatensysteme mit Funktionen (ab 0.7.0):**
     - Sinus, Kosinus, Tangens, Parabel, Gerade, e-Funktion, Logarithmus, Wurzel, Hyperbel, Betrag und Glockenkurve – mehrere in einem System, jede in eigener Farbe, optional mit Legende.
@@ -88,13 +89,16 @@
   - **Formen-Menü (Taste ⬠, ab 0.8.0):** Rechteck, Quadrat, Dreieck, Kreis, Ellipse, Trapez, Parallelogramm, Raute, Fünf- und Sechseck; Körper: Würfel, Quader, Pyramide, Prisma, Kugel, Zylinder, Kegel.
   - **Lineal mit Winkelmesser (Taste 📐, ab 0.8.0):**
     - Mit dem Finger verschieben, an den runden Knöpfen drehen (rastet auf 15°), Winkel ablesen.
-    - Stift auf dem Lineal oder dicht an einer Kante ansetzen: Die Linie läuft exakt an der Kante.
+    - Stift oder Textmarker auf dem Lineal oder dicht an einer Kante ansetzen: Die Linie läuft exakt an der Kante.
+    - Mit zwei Fingern drehen und verschieben (ab 0.8.1).
   - **Schaltpläne (ab 0.8.0):** Linie von Anschluss zu Anschluss ziehen und kurz halten – sie rastet an den Anschlüssen und an anderen Leitungen ein (Fang 5 mm).
   - **Flächen im 3D-Koordinatensystem (ab 0.8.0):** „+ Fläche z = f(x, y)" – Paraboloid, Sattel, Ebene, Welle, Glocke, Kegel; Ansicht drehen und neigen.
   - **Symbole sind ein Objekt (ab 0.8.0):** Antippen wählt das ganze Symbol oder Koordinatensystem; Strichstärke nachträglich änderbar (╌ / ━ an der Auswahl). Formen lassen sich antippen und verschieben.
+  - **Bild zuschneiden (ab 0.8.1):** Bild auswählen › „Zuschneiden", an Ecken und Kanten ziehen. Das Original bleibt erhalten – „Ganzes Bild" hebt den Zuschnitt wieder auf.
+  - **Einzelne Wörter formatieren (ab 0.8.1):** Im Textfeld Text markieren und über die Leiste darunter fett, kursiv, unterstrichen, größer/kleiner, in anderer Schrift oder Farbe setzen – mit Vorschau; im PDF-Export als durchsuchbarer Text.
   - **Alles Ausgewählte anpassen (ab 0.7.0):** Größe über Griffe an Ecken (proportional) und Kanten (eine Richtung), stufenlos drehen über den Drehgriff – für Handschrift, Formen, Symbole, Bilder und Textfelder.
   - **Übersicht** als Kacheln mit Vorschaubild oder als Liste, sortierbar (alphabetisch, zuletzt verwendet, zuletzt geändert, erstellt).
-  - **Mehrere Skripte gleichzeitig offen (ab 0.6.2):** Tableiste oben, jedes Skript behält Seite und Zoom, nach dem Neustart wieder da – ideal zum Kopieren aus dem Skript in die eigene Mitschrift.
+  - **Mehrere Skripte gleichzeitig offen (ab 0.6.2):** Tabs sind nach ihrem obersten Ordner gruppiert (ab 0.8.1). Tableiste oben, jedes Skript behält Seite und Zoom, nach dem Neustart wieder da – ideal zum Kopieren aus dem Skript in die eigene Mitschrift.
   - **Ordner/Kurse:** z. B. „Mathe 1" mit Unterordnern, Farbe und Symbol, optional einem Space zugeordnet – Skripte und Notizbücher per Drag & Drop einsortieren.
   - **Kopieren, Ausschneiden, Einfügen, Duplizieren:** mit dem Lasso auswählen, dann über die Leiste an der Auswahl, per Rechtsklick (bzw. langes Drücken) oder mit **Strg+C / Strg+X / Strg+V / Strg+D** – auch auf andere Seiten und in andere Notizbücher.
   - **Formerkennung durch Halten:** Strich zeichnen und am Ende kurz stillhalten – daraus wird eine saubere **Gerade** (rastet waagerecht/senkrecht ein, ideal für Bruchstriche), ein **Kreis**, eine **Ellipse**, ein **Rechteck/Quadrat**, ein **Dreieck** oder ein **Pfeil**. **Strg+Z** holt den Strich zurück.
@@ -111,6 +115,7 @@
 - **Spaces archivieren:** Abgeschlossenes verschwindet aus dem Alltag, bleibt im **Archiv** lesbar und lässt sich jederzeit wiederherstellen.
 - **Einsatzplanung (Beta)** für Teams: Mitarbeiter mit Rolle, Qualifikationen und Abwesenheiten – **nach Rolle gruppiert** und alphabetisch, Reihenfolge der Rollen einstellbar; viele gleichartige Mitarbeiter **schnell anlegen** („Speichern & nächster" übernimmt Rolle und Qualifikationen); Aufgaben per Drag & Drop einplanen (Tag oder Woche, Schichten), auch **mit mehreren Mitarbeitern** (mit Strg ziehen = weiteren hinzufügen), **Warnungen** bei Überlastung, Abwesenheit oder fehlender Qualifikation; Zuweisungs- und Aufgabenliste als **PDF/Druck (A4 quer)** oder **CSV**; **Besprechungsmodus** im Vollbild für den Monitor in der Morgenrunde. Umschalter **„Notizen/Projekte ↔ Einsatzplanung"** oben in der Seitenleiste.
   - **Ab 0.8.0:** Qualifikationen zentral verwalten und per Mehrfachauswahl zuweisen; **Auswertung der letzten 12 Monate** (erledigte und eingeplante Aufgaben, Stunden, Abwesenheiten) als Druck/PDF oder CSV; „Daten endgültig löschen" für Mitarbeiter.
+  - **Ab 0.8.1:** Der Ausdruck passt auf eine A4-Seite (automatisch verkleinert, Hoch- oder Querformat).
 - **Projektarbeiten (Beta):** wissenschaftliche Arbeiten, Bachelorarbeiten und andere Dokumente in **LaTeX** schreiben – mit **PDF-Vorschau** daneben, die sich nach dem Tippen selbst erneuert, verständlicher **Fehleranzeige** (Klick springt zur Zeile), Vorlage **„Wissenschaftliche Arbeit (deutsch)"** (Titelseite, Verzeichnisse, Literatur, deutsche Silbentrennung), deinen Notizen zum Einfügen und Export als PDF oder ZIP. Bestehende LaTeX-Projekte lassen sich als Kopie importieren.
 - **Volltextsuche** (auch Wortanfänge, Umlaute egal), Filter nach Status/Space/Tag, **Schnellsuche mit Strg+K**.
 - **Bilder** per Drag & Drop oder Einfügen (z. B. Bildschirmausschnitt).
@@ -263,6 +268,9 @@ Auf dem Mac jeweils **⌘** statt **Strg**.
 - **Deine Farbe:** Unter **Einstellungen → Darstellung** wählst du die Akzentfarbe der App. Mit den **Seitentasten der Maus** (Zurück/Vor) wechselst du zwischen den zuletzt geöffneten Ansichten.
 - **Tabellen in der Mitschrift:** Tabelle mit ▦ einfügen, mit dem Lasso auswählen und über die Marken oben/links eine Spalte oder Zeile wählen – dann davor oder dahinter einfügen. Für Text doppelt in eine Zelle klicken oder das Text-Werkzeug nehmen.
 - **Gerade Linien mit dem Lineal:** 📐 einschalten, Lineal mit dem Finger hinlegen und drehen, dann mit dem Stift an der Kante entlangziehen. Der Winkel steht in der Mitte.
+- **Abbildung passend machen:** Eingefügtes Bild antippen › „Zuschneiden" – so bleibt nur der Teil der Folie stehen, den du brauchst. Das ganze Bild kannst du jederzeit zurückholen.
+- **Wichtiges hervorheben:** In einem Textfeld ein Wort markieren und fett oder farbig setzen, statt ein zweites Textfeld anzulegen.
+- **Beim Schreiben weiterblättern:** Die Schreibhand kann liegen bleiben – mit einem Finger der anderen Hand scrollst du sofort weiter.
 - **Schaltplan in zwei Minuten:** Schaltzeichen über ∑ › Elektrotechnik einfügen, dann Leitungen von Anschluss zu Anschluss ziehen und am Ende kurz halten – der gelbe Ring zeigt, dass die Leitung sitzt.
 - **Hell für draußen, Dunkel für abends:** Einstellungen → Darstellung → System / Hell / Dunkel.
 - **Inbox-Routine:** Einmal am Tag die Inbox öffnen und mit der Tastatur durchgehen – **S** für den Space, **T** für Tags, **1–9** für den Status, **Enter** übernimmt den Vorschlag. Ziel: Inbox leer.
@@ -393,7 +401,10 @@ Danach gleicht SitzNotes automatisch ab: beim Start, alle paar Minuten, kurz nac
 - Tabellen kennen noch keine verbundenen Zellen, Hintergrundfarben oder Formatierung je Zelle. Der Radierer entfernt Handschrift über einer Tabelle, nicht die Tabelle selbst (dafür auswählen und löschen).
 - Ein Gerät mit 0.7.0 oder älter zeigt Tabellen erst nach dem Update an; beim Sync gehen sie nicht verloren.
 - iPad: Beim Zoomen an der 500-%-Grenze und bei starkem Herauszoomen kann das Bild beim Loslassen noch leicht versetzen.
-- Lineal: Der Textmarker legt sich erst beim Absetzen an die Kante; drehen über die Knöpfe (noch nicht mit zwei Fingern). Am iPad zeichnet der Stift über dem Lineal – verschoben wird es mit dem Finger.
+- Lineal: Am iPad zeichnet der Stift über dem Lineal – verschoben und gedreht wird es mit den Fingern.
+- iPad: Zwei Finger, die schon während des Schreibens aufsetzen, zoomen erst nach neuem Aufsetzen. Ein Finger, der während des Schreibens aufsetzt, scrollt ohne Nachlaufen; ein Daumen oder flach aufgelegter Finger muss in diesem Fall neu aufsetzen.
+- Textfelder: Die Formatierung einzelner Wörter zeigt die Vorschau unter dem Eingabefeld, nicht das Eingabefeld selbst.
+- Ein Gerät mit 0.8.0 zeigt zugeschnittene Bilder gestaucht und einzeln formatierten Text einheitlich; beides bleibt beim Sync erhalten. Ändert ein Gerät mit 0.8.0 den Text eines formatierten Felds, geht dessen Formatierung verloren.
 - Eckige Klammern werden beim Begradigen noch nicht immer sauber erkannt.
 - Ein Gerät mit 0.7.5 zeigt Board-Reihen und die Qualifikations-Verwaltung erst nach dem Update an; beim Sync gehen sie nicht verloren.
 - Striche, die in 0.7.0 mit dem Bereichsradierer teilweise entfernt wurden, können beim Öffnen einer alten Seite einmalig wieder sichtbar werden – sie lassen sich dann normal radieren.
